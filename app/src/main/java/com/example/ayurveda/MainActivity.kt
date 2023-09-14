@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
         Handler().postDelayed({
-            val intent = Intent(this, users_login::class.java)
+            val intent = Intent(this, UsersLogin::class.java)
             startActivity(intent)
             finish()
         },3000)
