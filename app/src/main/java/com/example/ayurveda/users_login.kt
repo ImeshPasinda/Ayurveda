@@ -1,22 +1,14 @@
 package com.example.ayurveda
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
 import androidx.appcompat.app.AppCompatDelegate
 
-class MainActivity : AppCompatActivity() {
+class users_login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_users_login)
 
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-
-        Handler().postDelayed({
-            val intent = Intent(this, users_login::class.java)
-            startActivity(intent)
-            finish()
-        },3000)
     }
 }
