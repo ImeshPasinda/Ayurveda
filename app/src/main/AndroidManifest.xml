@@ -12,20 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ayurveda"
         tools:targetApi="31">
-<!--        <activity-->
-<!--            android:name=".Home"-->
-<!--            android:exported="false" />-->
-        <!-- <activity -->
-        <!-- android:name=".WelcomeUser" -->
-        <!-- android:exported="false" /> -->
-        <!-- <activity -->
-        <!-- android:name=".UsersRegister" -->
-        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+         <activity
+         android:name=".WelcomeUser"
+         android:exported="false" />
+         <activity
+         android:name=".UsersRegister"
+         android:exported="false" />
         <activity
             android:name=".UsersLogin"
             android:exported="false" />
         <activity
-            android:name=".Home"
+            android:name=".MainActivity"
+            android:windowSoftInputMode="adjustPan"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
