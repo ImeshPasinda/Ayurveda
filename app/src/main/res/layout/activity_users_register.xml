@@ -7,6 +7,21 @@
     android:background="@color/primary_blue"
     tools:context=".UsersRegister">
 
+    <ImageButton
+        android:id="@+id/signinbtn"
+        android:layout_width="48dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/signinbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.229" />
+
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="131dp"
@@ -58,14 +73,15 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="56dp"
         android:fontFamily="@font/inria_sans_regular"
-        android:text="Already have an account? Sign in"
+        android:text="Already have an account?"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/userloginbtn" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -80,7 +96,7 @@
         app:srcCompat="@drawable/ayurveda_sn_white" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/userregisterbtn"
         android:layout_width="134dp"
         android:layout_height="48dp"
         android:background="@drawable/button_background"
@@ -88,6 +104,7 @@
 
         android:text="Register"
         android:textAllCaps="false"
+        android:textColor="@color/primary_blue"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent"

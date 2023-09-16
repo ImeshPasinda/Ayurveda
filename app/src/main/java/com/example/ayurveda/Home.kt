@@ -1,8 +1,13 @@
 package com.example.ayurveda
 
+import android.animation.AnimatorInflater
+import android.animation.ObjectAnimator
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.view.animation.AnimationUtils
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -48,5 +53,7 @@ class Home : AppCompatActivity() {
                 // Handle the failure to retrieve data
                 Log.e("Firestore", "Error getting documents: $exception")
             }
+
+
     }
 }
