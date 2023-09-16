@@ -13,21 +13,32 @@
         android:theme="@style/Theme.Ayurveda"
         tools:targetApi="31">
         <activity
+            android:name=".DoctorProfile"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDbEtMrpESGgw6iEoP-FujLUFyrIgkt2QY" />
+         <activity
+         android:name=".Map"
+         android:exported="false"
+         android:label="@string/title_activity_map" />
+        <activity
             android:name=".Home"
             android:exported="false" />
-         <activity
-         android:name=".WelcomeUser"
-         android:exported="false" />
-         <activity
-         android:name=".UsersRegister"
-         android:exported="false" />
+        <activity
+            android:name=".WelcomeUser"
+            android:exported="false" />
+        <activity
+            android:name=".UsersRegister"
+            android:exported="false" />
         <activity
             android:name=".UsersLogin"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:windowSoftInputMode="adjustPan"
-            android:exported="true">
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

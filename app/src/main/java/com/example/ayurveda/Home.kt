@@ -36,9 +36,27 @@ class Home : AppCompatActivity() {
                     val docNameEn = document.getString("docNameEn")
                     val docNameSn = document.getString("docNameSn")
                     val avatarUrl = document.getString("avatarUrl")
+                    val docQualification = document.getString("docQualification")
+                    val docLicense = document.getString("docLicense")
+                    val docPhoneNo = document.getString("docPhoneNo")
+                    val address = document.getString("address")
+                    val longitude = document.getDouble("longitude")
+                    val latitude = document.getDouble("latitude")
 
-                    if (docNameEn != null && docNameSn != null && avatarUrl != null) {
-                        val doctor = Doctor(docNameEn, docNameSn, avatarUrl)
+                    if (docNameEn != null && docNameSn != null && avatarUrl != null &&
+                        docQualification != null && docLicense != null && docPhoneNo != null &&
+                        address != null && longitude != null && latitude != null) {
+                        val doctor = Doctor(
+                            docNameEn,
+                            docNameSn,
+                            avatarUrl,
+                            docQualification,
+                            docLicense,
+                            docPhoneNo,
+                            address,
+                            longitude,
+                            latitude
+                        )
                         doctorsList.add(doctor)
                     }
                 }

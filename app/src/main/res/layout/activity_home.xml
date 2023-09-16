@@ -8,7 +8,7 @@
     tools:context=".Home">
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/docNamePtxt"
         android:layout_width="330dp"
         android:layout_height="94dp"
         android:layout_marginTop="35dp"
@@ -28,10 +28,10 @@
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:background="@drawable/bell"
-        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintBottom_toBottomOf="@+id/docNamePtxt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toEndOf="@+id/docNamePtxt"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.446" />
 
@@ -126,7 +126,7 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="2dp"
         android:layout_marginTop="4dp"
         android:fontFamily="@font/inria_sans_regular"
         android:text="Store"
@@ -160,7 +160,7 @@
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="20dp"
         android:fontFamily="@font/inria_sans_regular"
         android:text="Remedies"
         android:textSize="10sp"
@@ -270,8 +270,8 @@
         android:id="@+id/imageButton8"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="9dp"
         android:background="@drawable/appointments_icon"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/recycleviewdoctors" />
@@ -280,7 +280,7 @@
         android:id="@+id/imageButton9"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginStart="48dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/store_icon"
         app:layout_constraintStart_toEndOf="@+id/imageButton8"
@@ -294,6 +294,7 @@
         android:layout_marginEnd="48dp"
         android:background="@drawable/home_icon_active"
         app:layout_constraintEnd_toStartOf="@+id/imageButton11"
+        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toEndOf="@+id/imageButton9"
         app:layout_constraintTop_toBottomOf="@+id/recycleviewdoctors" />
 
@@ -302,7 +303,7 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="52dp"
+        android:layout_marginEnd="50dp"
         android:background="@drawable/remedies_icon"
         app:layout_constraintEnd_toStartOf="@+id/imageButton12"
         app:layout_constraintTop_toBottomOf="@+id/recycleviewdoctors" />
@@ -321,7 +322,7 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="-2dp"
+        android:layout_marginStart="-3dp"
         android:layout_marginTop="4dp"
         android:fontFamily="@font/inria_sans_regular"
         android:text="Appointments"

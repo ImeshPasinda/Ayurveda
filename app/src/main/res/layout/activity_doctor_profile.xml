@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_blue"
+    tools:context=".DoctorProfile">
+
+    <TextView
+        android:id="@+id/docNamePtxt"
+        android:layout_width="278dp"
+        android:layout_height="95dp"
+        android:fontFamily="@font/inria_sans_bold"
+        android:text="Doc.Name"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toEndOf="@+id/imageButton45"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.133" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="412dp"
+        android:layout_height="843dp"
+        android:layout_marginBottom="-75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/rectbg" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/navcard"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/inria_sans_regular"
+        android:text="Store"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton9"
+        app:layout_constraintVertical_bias="0.272" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/inria_sans_regular"
+        android:text="Home"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton10"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/inria_sans_regular"
+        android:text="Remedies"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton11"
+        app:layout_constraintVertical_bias="0.421" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="2dp"
+        android:fontFamily="@font/inria_sans_regular"
+        android:text="User"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.931"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton12"
+        app:layout_constraintVertical_bias="0.266" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="112dp"
+        android:background="@drawable/appointments_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="112dp"
+        android:background="@drawable/store_icon"
+        app:layout_constraintStart_toEndOf="@+id/imageButton8"
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/home_icon"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton11"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toEndOf="@+id/imageButton9"
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/remedies_icon"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton12"
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+    <ImageButton
+        android:id="@+id/imageButton12"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/user_profile_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/inria_sans_regular"
+        android:text="Appointments"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton8"
+        app:layout_constraintVertical_bias="0.272" />
+
+    <ImageButton
+        android:id="@+id/imageButton45"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="28dp"
+        android:background="@drawable/leftarrowwhite"
+        app:layout_constraintBottom_toTopOf="@+id/imageView10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.768" />
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="375dp"
+        android:layout_height="237dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView10"
+        app:layout_constraintVertical_bias="0.139"
+        app:srcCompat="@drawable/banner_dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatarP"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/doctoravatar"
+        app:layout_constraintBottom_toTopOf="@+id/docQualificationPtxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.942" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inria_sans_regular"
+        android:text="Banner"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView10"
+        app:layout_constraintVertical_bias="0.229" />
+
+    <TextView
+        android:id="@+id/docLicensePtxt"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inria_sans_regular"
+        android:text="Doc.RegNo"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.613"
+        app:layout_constraintStart_toEndOf="@+id/imageView31"
+        app:layout_constraintTop_toBottomOf="@+id/docQualificationPtxt"
+        app:layout_constraintVertical_bias="0.076" />
+
+    <TextView
+        android:id="@+id/docQualificationPtxt"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/inria_sans_regular"
+        android:text="Doc.Qualifications"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.613"
+        app:layout_constraintStart_toEndOf="@+id/imageView30"
+        app:layout_constraintTop_toBottomOf="@+id/imageView28"
+        app:layout_constraintVertical_bias="0.146" />
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView28"
+        app:srcCompat="@drawable/graduate_icon" />
+
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView30"
+        app:srcCompat="@drawable/license_icon" />
+
+    <ImageView
+        android:id="@+id/imageView32"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView31"
+        app:srcCompat="@drawable/phone_icon" />
+
+    <TextView
+        android:id="@+id/docAddressPtxt"
+        android:layout_width="290dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="18dp"
+        android:fontFamily="@font/inria_sans_regular"
+        android:text="Doc.Address"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintStart_toEndOf="@+id/imageView33"
+        app:layout_constraintTop_toBottomOf="@+id/docPhoneNoPtxt"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView32"
+        app:srcCompat="@drawable/location_icon" />
+
+    <TextView
+        android:id="@+id/docPhoneNoPtxt"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/inria_sans_regular"
+        android:text="Doc.PhoneNo"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.613"
+        app:layout_constraintStart_toEndOf="@+id/imageView32"
+        app:layout_constraintTop_toBottomOf="@+id/docLicensePtxt"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <ImageButton
+        android:id="@+id/mapbtn"
+        android:layout_width="156dp"
+        android:layout_height="16dp"
+        android:background="@drawable/clicktoviewlocationbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.382"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/docAddressPtxt"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

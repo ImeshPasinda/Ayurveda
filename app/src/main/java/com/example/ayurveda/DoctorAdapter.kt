@@ -1,5 +1,6 @@
 package com.example.ayurveda
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -26,13 +27,29 @@ class DoctorAdapter(private val doctorsList: List<Doctor>) :
         holder.docNameSn.text = doctor.docNameSn
         // Load the avatar image using a library like Picasso or Glide
         // Example using Picasso:
-        //Picasso.get().load(doctor.avatarUrl).into(holder.avatarImageView)
+        Picasso.get().load(doctor.avatarUrl).into(holder.avatarImageView)
 
-        // Set click listener for the profile button if needed
+        // Set click listener for the profile button
         holder.profileButton.setOnClickListener {
-            // Handle profile button click
+            // Create an Intent to start the DoctorProfile activity
+            val intent = Intent(holder.itemView.context, DoctorProfile::class.java)
+
+            // Pass the data as extras in the intent
+            intent.putExtra("docNameEn", doctor.docNameEn)
+            intent.putExtra("docNameSn", doctor.docNameSn)
+            intent.putExtra("avatarUrl", doctor.avatarUrl)
+            intent.putExtra("docQualification", doctor.docQualification)
+            intent.putExtra("docLicense", doctor.docLicense)
+            intent.putExtra("docPhoneNo", doctor.docPhoneNo)
+            intent.putExtra("docAddress", doctor.address)
+            intent.putExtra("longitude", doctor.longitude)
+            intent.putExtra("latitude", doctor.latitude)
+
+            // Start the DoctorProfile activity
+            holder.itemView.context.startActivity(intent)
         }
     }
+
 
     override fun getItemCount(): Int {
         return doctorsList.size
@@ -41,7 +58,7 @@ class DoctorAdapter(private val doctorsList: List<Doctor>) :
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val docNameEn: TextView = itemView.findViewById(R.id.doctorNameEn)
         val docNameSn: TextView = itemView.findViewById(R.id.doctorNameSn)
-        val avatarImageView: ImageView = itemView.findViewById(R.id.doctorAvatar)
+        val avatarImageView: ImageView = itemView.findViewById(R.id.avatarP)
         val profileButton: ImageButton = itemView.findViewById(R.id.goDoctorProfile)
     }
 }
