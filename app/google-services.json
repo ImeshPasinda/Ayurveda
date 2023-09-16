@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "864419816224",
+    "project_id": "ayurveda-1932e",
+    "storage_bucket": "ayurveda-1932e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:864419816224:android:7c5252729a2689ca536d45",
+        "android_client_info": {
+          "package_name": "com.example.ayurveda"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB89kzVoIECopyD45SE4SsV8xxzQmSVKEc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
