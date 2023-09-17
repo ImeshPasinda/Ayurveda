@@ -58,7 +58,6 @@ class Home : AppCompatActivity() {
         // Create a list to hold the data
         val doctorsList = mutableListOf<Doctor>()
 
-        // Retrieve data from Firestore
         val doctorsCollection = db.collection("doctors")
         doctorsCollection.get()
             .addOnSuccessListener { querySnapshot ->
