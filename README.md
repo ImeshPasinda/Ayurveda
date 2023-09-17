@@ -4,6 +4,12 @@ Welcome to the future of Ayurvedic healthcare! 🚀
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
+## Authors
+- [Darshi Buddhini](https://github.com/DarshiBuddhini)
+- [Kimuthu Gamage](https://github.com/KimuthuGamage)
+- [Dinithi Mendis](https://github.com/DinithiMendis)
+- [Imesh Pasinda](https://github.com/ImeshPasinda)
+
 ## Technologies Used
 
 - **Kotlin**: Our app is built using the Kotlin programming language, ensuring a robust and modern codebase.
@@ -13,6 +19,9 @@ Welcome to the future of Ayurvedic healthcare! 🚀
 - **Google Firebase**: Firebase is at the heart of our app, providing a secure and scalable backend infrastructure, authentication, and real-time database capabilities.
 
 - **Figma**: The user interface of our app was meticulously designed using Figma, ensuring a visually appealing and user-friendly experience.
+
+## Mobile UI - Figma
+![App Preview](https://github.com/ImeshPasinda/Ayurveda/raw/master/images/UI.png)
 
 ## Introduction
 
