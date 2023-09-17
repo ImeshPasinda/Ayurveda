@@ -4,19 +4,21 @@ Welcome to the future of Ayurvedic healthcare! 🚀
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
+## Technologies Used
+
+- **Kotlin**: Our app is built using the Kotlin programming language, ensuring a robust and modern codebase.
+
+- **Android Studio**: We leverage the power of Android Studio, the official integrated development environment for Android app development, to create a seamless user experience.
+
+- **Google Firebase**: Firebase is at the heart of our app, providing a secure and scalable backend infrastructure, authentication, and real-time database capabilities.
+
+- **Figma**: The user interface of our app was meticulously designed using Figma, ensuring a visually appealing and user-friendly experience.
+
 ## Introduction
 
 Introducing our innovative Ayurveda Medicine and Doctor Finder app, a seamless digital bridge connecting traditional Ayurvedic practices with modern convenience. Designed to enhance doctor-patient connectivity and accessibility to authentic herbal remedies of Sri Lanka, our app empowers users to effortlessly schedule appointments with specialized Ayurvedic doctors, receive personalized herbal remedy recommendations, and conveniently order genuine herbal products online.
 
 By gathering user feedback on these features, we aim to refine the app, ensuring it effectively addresses users' needs. Insights from the testing phase will guide us in refining the app's functionality, providing users with a seamless and holistic Ayurvedic healthcare solution.
-
-## Technologies Used
-
-- **Kotlin**: We've developed our Android app using the Kotlin programming language, which provides robust support for modern Android app development.
-
-- **Android Studio**: Android Studio is our integrated development environment (IDE) of choice, making it easier to design, code, and test our app.
-
-- **Google Firebase**: We rely on Google Firebase for various essential features, including authentication, real-time database, cloud functions, and cloud storage. Firebase ensures that our app runs smoothly and securely.
 
 ## Test Objectives (Goals)
 
