@@ -4,6 +4,12 @@ Welcome to the future of Ayurvedic healthcare! 🚀
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
+## Authors
+- Darshi Buddhini
+- Kimuthu Gamage
+- Dinithi Mendis
+- Imesh Pasinda
+
 ## Technologies Used
 
 - **Kotlin**: Our app is built using the Kotlin programming language, ensuring a robust and modern codebase.
