@@ -10,6 +10,14 @@ Introducing our innovative Ayurveda Medicine and Doctor Finder app, a seamless d
 
 By gathering user feedback on these features, we aim to refine the app, ensuring it effectively addresses users' needs. Insights from the testing phase will guide us in refining the app's functionality, providing users with a seamless and holistic Ayurvedic healthcare solution.
 
+## Technologies Used
+
+- **Kotlin**: We've developed our Android app using the Kotlin programming language, which provides robust support for modern Android app development.
+
+- **Android Studio**: Android Studio is our integrated development environment (IDE) of choice, making it easier to design, code, and test our app.
+
+- **Google Firebase**: We rely on Google Firebase for various essential features, including authentication, real-time database, cloud functions, and cloud storage. Firebase ensures that our app runs smoothly and securely.
+
 ## Test Objectives (Goals)
 
 The goal of user research is to identify and verify the requirements of users within this system. This user research will be used to understand what users would say, think, do, and feel while using the system and to verify the user flows previously identified.
