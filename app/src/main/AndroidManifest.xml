@@ -25,7 +25,8 @@
          android:label="@string/title_activity_map" />
         <activity
             android:name=".Home"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"/>
         <activity
             android:name=".WelcomeUser"
             android:exported="false" />
