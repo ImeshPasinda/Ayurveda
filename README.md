@@ -21,7 +21,7 @@ Welcome to the future of Ayurvedic healthcare! 🚀
 - **Figma**: The user interface of our app was meticulously designed using Figma, ensuring a visually appealing and user-friendly experience.
 
 ## Mobile UI - Figma
-![App Preview](https://github.com/ImeshPasinda/Ayurveda/raw/master/images/UI.png)
+![App Preview](https://github.com/ImeshPasinda/Ayurveda/raw/master/UI.png)
 
 ## Introduction
 
