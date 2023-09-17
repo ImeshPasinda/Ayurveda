@@ -5,10 +5,10 @@ Welcome to the future of Ayurvedic healthcare! 🚀
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ## Authors
-- Darshi Buddhini
-- Kimuthu Gamage
-- Dinithi Mendis
-- Imesh Pasinda
+- [Darshi Buddhini](https://github.com/DarshiBuddhini)
+- [Kimuthu Gamage](https://github.com/kimuthuUG)
+- [Dinithi Mendis](https://github.com/dinithi27)
+- [Imesh Pasinda](https://github.com/ImeshPasinda)
 
 ## Technologies Used
 
