@@ -31,7 +31,7 @@
         app:srcCompat="@drawable/ayurveda_sn_white" />
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/ulemail"
         android:layout_width="303dp"
         android:layout_height="57dp"
         android:background="@drawable/custom_input"
@@ -49,7 +49,7 @@
         app:layout_constraintVertical_bias="0.472" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/ulpassword"
         android:layout_width="303dp"
         android:layout_height="57dp"
         android:background="@drawable/custom_input"
@@ -63,7 +63,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/ulemail"
         app:layout_constraintVertical_bias="0.075" />
 
     <Button
@@ -73,7 +73,6 @@
         android:background="@drawable/button_background"
         android:fontFamily="@font/inria_sans_regular"
         android:text="Login"
-
         android:textAllCaps="false"
         android:textColor="@color/primary_blue"
         android:textSize="20sp"
@@ -81,7 +80,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/ulpassword"
         app:layout_constraintVertical_bias="0.185" />
 
     <TextView

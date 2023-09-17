@@ -8,6 +8,7 @@ import android.util.Log
 import android.view.View
 import android.view.animation.AnimationUtils
 import android.widget.ImageButton
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -19,11 +20,40 @@ class Home : AppCompatActivity() {
     // Initialize Firestore
     val db = Firebase.firestore
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
+        val sessionManager = SessionManager(this)
+        val userEmail = sessionManager.getUserEmail()
+
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+
+
+
+        // Retrieve the username from the "users" collection
+        val usersCollection = db.collection("users")
+        usersCollection.whereEqualTo("email", userEmail)
+            .get()
+            .addOnSuccessListener { userQuerySnapshot ->
+                // Assuming there's only one document with the matching email
+                if (!userQuerySnapshot.isEmpty) {
+                    val userDocument = userQuerySnapshot.documents[0]
+                    val username = userDocument.getString("username")
+
+                    // Now you have the username, and you can use it as needed
+                    // For example, you can set it in a TextView
+                    val usernameTextView = findViewById<TextView>(R.id.unamenavbar)
+                    usernameTextView.text = username
+                }
+            }
+            .addOnFailureListener { exception ->
+                // Handle the failure to retrieve user data
+                Log.e("Firestore", "Error getting user document: $exception")
+            }
+
 
         // Create a list to hold the data
         val doctorsList = mutableListOf<Doctor>()
@@ -73,5 +103,9 @@ class Home : AppCompatActivity() {
             }
 
 
+    }
+    // Override the onBackPressed() method to block the back button
+    override fun onBackPressed() {
+        // Leave this method empty to block the back button
     }
 }

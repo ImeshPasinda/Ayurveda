@@ -172,9 +172,10 @@
         app:layout_constraintVertical_bias="0.421" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/unamenavbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="2dp"
         android:fontFamily="@font/inria_sans_regular"
@@ -188,7 +189,7 @@
         app:layout_constraintVertical_bias="0.266" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/cattxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -238,7 +239,7 @@
         android:background="@drawable/seeallbtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.885"
-        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintStart_toEndOf="@+id/cattxt"
         app:layout_constraintTop_toBottomOf="@+id/searchView" />
 
     <ImageButton

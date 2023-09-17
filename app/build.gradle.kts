@@ -52,6 +52,7 @@ dependencies {
     implementation("com.google.firebase:firebase-firestore-ktx:24.7.1")
     implementation ("com.squareup.picasso:picasso:2.71828")
     implementation("com.google.android.gms:play-services-maps:18.1.0")
+    implementation("com.google.firebase:firebase-auth-ktx:22.1.2")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
