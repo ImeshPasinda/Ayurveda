@@ -67,7 +67,7 @@
         app:layout_constraintVertical_bias="0.075" />
 
     <Button
-        android:id="@+id/userloginbtn"
+        android:id="@+id/userlogoutbtn"
         android:layout_width="134dp"
         android:layout_height="48dp"
         android:background="@drawable/button_background"
@@ -93,7 +93,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userloginbtn"
+        app:layout_constraintTop_toBottomOf="@+id/userlogoutbtn"
         app:layout_constraintVertical_bias="0.647" />
 
     <TextView

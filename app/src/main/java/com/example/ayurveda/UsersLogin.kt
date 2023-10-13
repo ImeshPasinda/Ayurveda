@@ -21,7 +21,7 @@ class UsersLogin : AppCompatActivity() {
 
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
 
-        val btnUsersLogin = findViewById<Button>(R.id.userloginbtn)
+        val btnUsersLogin = findViewById<Button>(R.id.userlogoutbtn)
 
         btnUsersLogin.setOnClickListener {
             val email = findViewById<EditText>(R.id.ulemail).text.toString()

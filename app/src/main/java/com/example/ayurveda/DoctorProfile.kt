@@ -27,16 +27,16 @@ class DoctorProfile : AppCompatActivity() {
 
         val docNameEnTextView = findViewById<TextView>(R.id.docNamePtxt)
         val avatarImageView = findViewById<ImageView>(R.id.avatarP)
-        val qualificationTextView = findViewById<TextView>(R.id.docQualificationPtxt)
-        val licenseTextView = findViewById<TextView>(R.id.docLicensePtxt)
-        val addressTextView = findViewById<TextView>(R.id.docAddressPtxt)
+        val qualificationTextView = findViewById<TextView>(R.id.userName)
+        val licenseTextView = findViewById<TextView>(R.id.subuserName)
+        val addressTextView = findViewById<TextView>(R.id.subuserPassword)
 
         docNameEnTextView.text = docNameEn
         qualificationTextView.text = docQualification
         licenseTextView.text = docLicense
         addressTextView.text = docAddress
 
-        val phoneNoTextView = findViewById<TextView>(R.id.docPhoneNoPtxt)
+        val phoneNoTextView = findViewById<TextView>(R.id.subuserEmail)
         phoneNoTextView.text = docPhoneNo
 
         phoneNoTextView.setOnClickListener {

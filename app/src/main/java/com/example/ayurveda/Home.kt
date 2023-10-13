@@ -2,6 +2,7 @@ package com.example.ayurveda
 
 import android.animation.AnimatorInflater
 import android.animation.ObjectAnimator
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -31,8 +32,11 @@ class Home : AppCompatActivity() {
 
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
-
-
+        val userNavButton = findViewById<ImageButton>(R.id.userProfileNavbtn)
+        userNavButton.setOnClickListener {
+            val intent = Intent(this, UserProfile::class.java)
+            startActivity(intent)
+        }
         // Retrieve the username from the "users" collection
         val usersCollection = db.collection("users")
         usersCollection.whereEqualTo("email", userEmail)
