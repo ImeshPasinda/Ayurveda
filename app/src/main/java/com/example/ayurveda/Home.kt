@@ -42,15 +42,22 @@ class Home : AppCompatActivity() {
         usersCollection.whereEqualTo("email", userEmail)
             .get()
             .addOnSuccessListener { userQuerySnapshot ->
-                // Assuming there's only one document with the matching email
                 if (!userQuerySnapshot.isEmpty) {
-                    val userDocument = userQuerySnapshot.documents[0]
-                    val username = userDocument.getString("username")
+                    // There may be multiple documents matching the email; loop through them if needed
+                    for (userDocument in userQuerySnapshot.documents) {
+                        val username = userDocument.getString("username")
 
-                    // Now you have the username, and you can use it as needed
-                    // For example, you can set it in a TextView
-                    val usernameTextView = findViewById<TextView>(R.id.unamenavbar)
-                    usernameTextView.text = username
+                        // Now you have the username, and you can use it as needed
+                        // For example, you can set it in a TextView
+                        val usernameTextView = findViewById<TextView>(R.id.unamenavbar)
+                        usernameTextView.text = username?.split(" ")?.get(0) ?: "User"
+
+                        // If you found the username you were looking for, you can break out of the loop
+                        break
+                    }
+                } else {
+                    // Handle the case when no document with the matching email is found
+                    Log.d("Firestore", "No user document found for email: $userEmail")
                 }
             }
             .addOnFailureListener { exception ->

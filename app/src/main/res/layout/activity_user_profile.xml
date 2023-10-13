@@ -11,23 +11,26 @@
         android:id="@+id/docNamePtxt"
         android:layout_width="232dp"
         android:layout_height="48dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="47dp"
         android:fontFamily="@font/inria_sans_bold"
         android:text="Profile"
         android:textColor="@color/white"
         android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.23"
         app:layout_constraintStart_toEndOf="@+id/imageButton45"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.089" />
 
     <ImageView
         android:id="@+id/imageView10"
         android:layout_width="412dp"
         android:layout_height="843dp"
+        android:layout_marginBottom="-75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/rectbg"
-        tools:layout_editor_absoluteY="144dp" />
+        app:srcCompat="@drawable/rectbg" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -154,7 +157,7 @@
         android:layout_height="30dp"
         android:layout_marginTop="112dp"
         android:layout_marginEnd="24dp"
-        android:background="@drawable/user_profile_icon"
+        android:background="@drawable/userprofile_blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
@@ -189,39 +192,42 @@
         android:id="@+id/avatarP"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_marginTop="260dp"
+        android:layout_marginTop="100dp"
         android:src="@drawable/doctoravatar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/imageView10" />
 
     <TextView
         android:id="@+id/subuserName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="104dp"
         android:fontFamily="@font/inria_sans_regular"
         android:text="User.Name"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.718"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/userName"
-        app:layout_constraintVertical_bias="0.108" />
+        app:layout_constraintVertical_bias="0.091" />
 
     <TextView
         android:id="@+id/subuserNametxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
         android:fontFamily="@font/inria_sans_regular"
         android:text="Name"
         android:textColor="@color/primary_blue"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/subuserName"
-        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.221"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/userName"
-        app:layout_constraintVertical_bias="0.108" />
+        app:layout_constraintVertical_bias="0.091" />
 
     <TextView
         android:id="@+id/userName"
@@ -242,45 +248,47 @@
         android:id="@+id/subuserPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="104dp"
         android:layout_marginBottom="18dp"
         android:fontFamily="@font/inria_sans_regular"
         android:text="User.Password"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.689"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/subuserEmail"
-        app:layout_constraintVertical_bias="0.052" />
+        app:layout_constraintVertical_bias="0.064" />
 
     <TextView
         android:id="@+id/subuserPasswordtxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="18dp"
+        android:layout_marginBottom="40dp"
         android:fontFamily="@font/inria_sans_regular"
         android:text="Password"
         android:textColor="@color/primary_blue"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/subuserPassword"
-        app:layout_constraintHorizontal_bias="0.573"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintHorizontal_bias="0.236"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/subuserEmail"
-        app:layout_constraintVertical_bias="0.052" />
+        app:layout_constraintVertical_bias="0.068" />
 
     <TextView
         android:id="@+id/subuserEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="104dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/inria_sans_regular"
         android:text="User.Email"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.713"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/subuserName"
-        app:layout_constraintVertical_bias="0.038" />
+        app:layout_constraintVertical_bias="0.051" />
 
     <TextView
         android:id="@+id/subuserEmailtxt"
@@ -292,11 +300,11 @@
         android:textColor="@color/primary_blue"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/subuserEmail"
-        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.22"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/subuserName"
-        app:layout_constraintVertical_bias="0.038" />
+        app:layout_constraintVertical_bias="0.051" />
 
     <Button
         android:id="@+id/userlogoutbtn"
@@ -313,8 +321,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subuserPassword"
-        app:layout_constraintVertical_bias="0.583" />
+        app:layout_constraintTop_toBottomOf="@+id/subuserPassword" />
 
     <Button
         android:id="@+id/usersupplierloginbtn"
@@ -329,9 +336,9 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/userlogoutbtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/subuserPassword"
-        app:layout_constraintVertical_bias="0.817" />
+        app:layout_constraintVertical_bias="0.857" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

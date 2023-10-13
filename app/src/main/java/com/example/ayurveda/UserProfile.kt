@@ -31,13 +31,24 @@ class UserProfile : AppCompatActivity() {
                     val userDocument = userQuerySnapshot.documents[0]
                     val username = userDocument.getString("username")
                     val useremail = userDocument.getString("email")
+                    val userpassword = userDocument.getString("password")
                     // Now you have the username, and you can use it as needed
                     // For example, you can set it in a TextView
+
+                    val usernavTextView = findViewById<TextView>(R.id.unamenavbar)
+                    usernavTextView.text = username?.split(" ")?.get(0) ?: "User"
+
                     val usernameTextView = findViewById<TextView>(R.id.userName)
                     usernameTextView.text = username
 
+                    val usersubnameTextView = findViewById<TextView>(R.id.subuserName)
+                    usersubnameTextView.text = username
+
                     val useremailextView = findViewById<TextView>(R.id.subuserEmail)
                     useremailextView.text = useremail
+
+                    val userpasswordextView = findViewById<TextView>(R.id.subuserPassword)
+                    userpasswordextView.text = userpassword
                 }
             }
             .addOnFailureListener { exception ->
