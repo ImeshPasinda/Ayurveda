@@ -68,7 +68,7 @@ class UserProfile : AppCompatActivity() {
                 Log.e("Firestore", "Error getting user document: $exception")
             }
 
-        val logoutButton = findViewById<Button>(R.id.userlogoutbtn)
+        val logoutButton = findViewById<ImageButton>(R.id.userlogout_btn)
         logoutButton.setOnClickListener {
             // Logout action
             sessionManager.logout()
