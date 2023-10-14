@@ -153,7 +153,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton10"
+        app:layout_constraintTop_toBottomOf="@+id/homenavbtn_1"
         app:layout_constraintVertical_bias="0.333" />
 
     <TextView
@@ -272,52 +272,53 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="9dp"
+        android:layout_marginTop="112dp"
         android:background="@drawable/appointments_icon"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recycleviewdoctors" />
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
     <ImageButton
         android:id="@+id/imageButton9"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="112dp"
         android:background="@drawable/store_icon"
         app:layout_constraintStart_toEndOf="@+id/imageButton8"
-        app:layout_constraintTop_toBottomOf="@+id/recycleviewdoctors" />
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
     <ImageButton
-        android:id="@+id/imageButton10"
+        android:id="@+id/homenavbtn_1"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="48dp"
+        android:layout_marginTop="108dp"
         android:layout_marginEnd="48dp"
         android:background="@drawable/home_icon_active"
         app:layout_constraintEnd_toStartOf="@+id/imageButton11"
-        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toEndOf="@+id/imageButton9"
-        app:layout_constraintTop_toBottomOf="@+id/recycleviewdoctors" />
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
     <ImageButton
         android:id="@+id/imageButton11"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="112dp"
         android:layout_marginEnd="50dp"
         android:background="@drawable/remedies_icon"
         app:layout_constraintEnd_toStartOf="@+id/userProfileNavbtn"
-        app:layout_constraintTop_toBottomOf="@+id/recycleviewdoctors" />
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
     <ImageButton
         android:id="@+id/userProfileNavbtn"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="112dp"
         android:layout_marginEnd="24dp"
         android:background="@drawable/user_profile_icon"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recycleviewdoctors" />
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
     <TextView
         android:id="@+id/textView9"

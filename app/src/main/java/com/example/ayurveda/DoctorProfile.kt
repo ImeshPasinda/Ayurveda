@@ -15,6 +15,20 @@ class DoctorProfile : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_doctor_profile)
 
+
+        val backButton = findViewById<ImageButton>(R.id.backtoHomebtn)
+        backButton.setOnClickListener {
+            val intent = Intent(this, Home::class.java)
+            startActivity(intent)
+        }
+
+        val userNavBtn = findViewById<ImageButton>(R.id.userProfileNavbtn)
+        userNavBtn.setOnClickListener {
+            val intent = Intent(this, UserProfile::class.java)
+            startActivity(intent)
+        }
+
+
         val docNameEn = intent.getStringExtra("docNameEn")
         val avatarUrl = intent.getStringExtra("avatarUrl")
         val docQualification = intent.getStringExtra("docQualification")

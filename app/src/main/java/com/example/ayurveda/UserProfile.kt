@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.TextView
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
@@ -20,6 +21,17 @@ class UserProfile : AppCompatActivity() {
 
         val sessionManager = SessionManager(this)
         val userEmail = sessionManager.getUserEmail()
+
+
+
+
+        val userNavButton = findViewById<ImageButton>(R.id.homenavbtn_1)
+        userNavButton.setOnClickListener {
+            val intent = Intent(this, Home::class.java)
+            startActivity(intent)
+        }
+
+
 
         // Retrieve the username from the "users" collection
         val usersCollection = db.collection("users")

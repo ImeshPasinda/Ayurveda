@@ -18,7 +18,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/textView8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.162"
-        app:layout_constraintStart_toEndOf="@+id/imageButton45"
+        app:layout_constraintStart_toEndOf="@+id/backtoHomebtn"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.133" />
 
@@ -72,7 +72,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton10"
+        app:layout_constraintTop_toBottomOf="@+id/homenavbtn_1"
         app:layout_constraintVertical_bias="0.333" />
 
     <TextView
@@ -128,7 +128,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
     <ImageButton
-        android:id="@+id/imageButton10"
+        android:id="@+id/homenavbtn_1"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="48dp"
@@ -164,7 +164,7 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="-2dp"
+        android:layout_marginStart="-3dp"
         android:layout_marginTop="4dp"
         android:fontFamily="@font/inria_sans_regular"
         android:text="Appointments"
@@ -177,7 +177,7 @@
         app:layout_constraintVertical_bias="0.272" />
 
     <ImageButton
-        android:id="@+id/imageButton45"
+        android:id="@+id/backtoHomebtn"
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_marginStart="28dp"
