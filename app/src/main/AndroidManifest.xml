@@ -12,6 +12,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ayurveda"
         tools:targetApi="31">
+<!--        <activity-->
+<!--            android:name=".EditDiagnosisForm"-->
+<!--            android:exported="false" />-->
+        <!-- <activity -->
+        <!-- android:name=".DoctorDiagnosisForm" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".DocProfilenDashboard" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".WelcomeDoctor"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".DoctorRegister" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".DoctorLogin" -->
+        <!-- android:exported="false" /> -->
         <activity
             android:name=".UserProfile"
             android:exported="false" />
@@ -41,7 +58,7 @@
             android:name=".UsersLogin"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".EditDiagnosisForm"
             android:exported="true"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
