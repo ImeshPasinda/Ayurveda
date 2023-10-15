@@ -190,7 +190,7 @@
 
 
     <EditText
-        android:id="@+id/symptoms"
+        android:id="@+id/cardno"
         android:layout_width="303dp"
         android:layout_height="57dp"
         android:layout_marginTop="36dp"
@@ -222,7 +222,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/symptoms"
+        app:layout_constraintTop_toBottomOf="@+id/cardno"
         app:layout_constraintVertical_bias="0.065" />
 
     <EditText
@@ -309,7 +309,7 @@
         android:text="time"
         android:textColor="@color/black"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/symptoms"
+        app:layout_constraintBottom_toTopOf="@+id/cardno"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.283"
         app:layout_constraintStart_toEndOf="@+id/imageView9"

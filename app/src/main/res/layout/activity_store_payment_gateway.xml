@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primary_blue"
-    tools:context=".DoctorDiagnosisForm">
+    tools:context=".StorePaymentGateway">
 
     <TextView
-        android:id="@+id/docNamePtxt"
+        android:id="@+id/tvpay"
         android:layout_width="278dp"
         android:layout_height="55dp"
         android:fontFamily="@font/inria_sans_bold"
-        android:text="Appointments"
+        android:text="Payement Details"
         android:textColor="@color/white"
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView10"
@@ -188,60 +188,24 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.768" />
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/avatarP"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="228dp"
-        android:src="@drawable/doctoravatar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="U.name"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/avatarP" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:fontFamily="@font/inria_sans_regular"
-        android:text="Diagnosis"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
     <EditText
         android:id="@+id/cardno"
         android:layout_width="303dp"
         android:layout_height="57dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="48dp"
         android:background="@drawable/custom_input"
         android:ems="10"
         android:fontFamily="@font/inria_sans_regular"
-        android:hint="Symptoms"
+        android:hint="CardNo"
         android:inputType="textEmailAddress"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
         android:textColor="@color/material_dynamic_neutral50"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton13" />
 
     <EditText
         android:id="@+id/medication"
@@ -250,7 +214,7 @@
         android:background="@drawable/custom_input"
         android:ems="10"
         android:fontFamily="@font/inria_sans_regular"
-        android:hint="Medication"
+        android:hint="Card Holder Name"
         android:inputType="textPassword"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
@@ -262,13 +226,13 @@
         app:layout_constraintVertical_bias="0.065" />
 
     <EditText
-        android:id="@+id/notes"
+        android:id="@+id/cvv"
         android:layout_width="303dp"
         android:layout_height="57dp"
         android:background="@drawable/custom_input"
         android:ems="10"
         android:fontFamily="@font/inria_sans_regular"
-        android:hint="Medication"
+        android:hint="CVV"
         android:inputType="textPassword"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
@@ -280,35 +244,61 @@
         app:layout_constraintTop_toBottomOf="@+id/medication"
         app:layout_constraintVertical_bias="0.092" />
 
+    <EditText
+        android:id="@+id/expdate"
+        android:layout_width="303dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:fontFamily="@font/inria_sans_regular"
+        android:hint="Date of Expire"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/material_dynamic_neutral50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvv" />
+
     <Button
         android:id="@+id/diagSavebtn"
         android:layout_width="134dp"
         android:layout_height="48dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/btn_blue_background"
         android:fontFamily="@font/inria_sans_regular"
-        android:text="Save"
+        android:text="Pay LKR"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/notes"
-        app:layout_constraintVertical_bias="0.185" />
+        app:layout_constraintTop_toBottomOf="@+id/expdate" />
 
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/inria_sans_regular"
-
-        android:text="date"
-        android:textColor="@color/white"
-        android:textSize="20sp"
+    <ImageButton
+        android:id="@+id/imageButton12"
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="117dp"
+        android:background="@drawable/mastercard"
+        android:scaleType="centerInside"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.193"
+        app:layout_constraintHorizontal_bias="0.251"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/docNamePtxt" />
+        app:layout_constraintTop_toBottomOf="@+id/tvpay" />
+
+    <ImageButton
+        android:id="@+id/imageButton13"
+        android:layout_width="130dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="116dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintStart_toEndOf="@+id/imageButton12"
+        app:layout_constraintTop_toBottomOf="@+id/tvpay"
+        app:srcCompat="@drawable/visa" />
 </androidx.constraintlayout.widget.ConstraintLayout>
