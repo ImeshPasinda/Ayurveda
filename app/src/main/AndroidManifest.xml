@@ -12,19 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ayurveda"
         tools:targetApi="31">
-<!--        <activity-->
-<!--            android:name=".StorePaymentGateway"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".StorePayment"-->
-<!--            android:exported="false" />-->
+        <!--        <activity-->
+        <!--            android:name=".StorePaymentGateway"-->
+        <!--            android:exported="false" />-->
+        <!--        <activity-->
+        <!--            android:name=".StorePayment"-->
+        <!--            android:exported="false" />-->
         <activity
             android:name=".PaymentSuccess"
             android:exported="false" />
-<!--        <activity-->
-<!--            android:name=".PaymentGateway"-->
-<!--            android:exported="false" /> &lt;!&ndash;
-<activity &ndash;&gt;-->
+        <!--        <activity-->
+        <!--            android:name=".PaymentGateway"-->
+        <!--            android:exported="false" /> &lt;!&ndash;
+        <activity &ndash;&gt;-->
         <!-- android:name=".DoctorPayment" -->
         <!-- android:exported="false" /> -->
         <!-- <activity -->
