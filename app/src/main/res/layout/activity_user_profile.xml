@@ -32,6 +32,41 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/rectbg" />
 
+    <Button
+        android:id="@+id/diagSavebtn2"
+        android:layout_width="303dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/btn_blue_background"
+        android:fontFamily="@font/inria_sans_regular"
+        android:text="Switch to Supplier"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.574"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subuserPassword"
+        app:layout_constraintVertical_bias="0.689" />
+
+    <Button
+        android:id="@+id/userlogout_btn"
+        android:layout_width="303dp"
+        android:layout_height="57dp"
+        android:background="@drawable/btn_gray_background"
+        android:fontFamily="@font/inria_sans_regular"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:textColor="@color/primary_gray"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.574"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diagSavebtn2"
+        app:layout_constraintVertical_bias="0.093" />
+
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="wrap_content"
@@ -310,29 +345,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/subuserName"
         app:layout_constraintVertical_bias="0.051" />
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="238dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="96dp"
-        android:background="@drawable/sts_btn"
-        android:scaleType="centerInside"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subuserPassword" />
-
-    <ImageButton
-        android:id="@+id/userlogout_btn"
-        android:layout_width="238dp"
-        android:layout_height="58dp"
-        android:background="@drawable/logout_btn"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton"
-        app:layout_constraintVertical_bias="0.076" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
