@@ -24,7 +24,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/docNamePtxt7"
+        android:id="@+id/bookingrefno"
         android:layout_width="228dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/inria_sans_bold"
@@ -67,7 +67,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/inria_sans_regular"
-        android:text="Booking no: #"
+        android:text="Booking no: "
         android:textColor="@color/primary_gray"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView8"
@@ -78,7 +78,7 @@
         app:layout_constraintVertical_bias="0.006" />
 
     <TextView
-        android:id="@+id/userName11"
+        android:id="@+id/subbookingrefno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"

@@ -44,7 +44,7 @@
         tools:layout_editor_absoluteX="0dp" />
 
     <Button
-        android:id="@+id/diagSavebtn3"
+        android:id="@+id/booknowbtndocprof"
         android:layout_width="303dp"
         android:layout_height="57dp"
         android:background="@drawable/btn_blue_background"

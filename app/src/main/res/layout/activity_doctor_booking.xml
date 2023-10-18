@@ -33,40 +33,42 @@
         app:srcCompat="@drawable/rectbg" />
 
     <Button
-        android:id="@+id/diagSavebtn4"
+        android:id="@+id/doctorbookbtn"
         android:layout_width="303dp"
         android:layout_height="57dp"
         android:background="@drawable/btn_blue_background"
         android:fontFamily="@font/inria_sans_regular"
-        android:text="Pay Now"
+        android:text="Book"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner2"
+        app:layout_constraintTop_toBottomOf="@+id/timesspinner"
         app:layout_constraintVertical_bias="0.547" />
 
     <EditText
-        android:id="@+id/ulemail"
+        android:id="@+id/datepickerbooking"
         android:layout_width="303dp"
         android:layout_height="57dp"
         android:background="@drawable/custom_input"
         android:drawableEnd="@drawable/calanderforinputs"
         android:drawablePadding="8dp"
         android:ems="10"
+        android:inputType="none"
+        android:clickable="true"
+        android:focusable="false"
         android:fontFamily="@font/inria_sans_regular"
         android:hint="YYYY/MM/DD"
-        android:inputType="textEmailAddress"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
-        android:textColor="@color/material_dynamic_neutral50"
+        android:textColor="@color/light_black"
         app:layout_constraintBottom_toTopOf="@+id/imageView8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userName"
+        app:layout_constraintTop_toBottomOf="@+id/docName"
         app:layout_constraintVertical_bias="0.295" />
 
     <ImageView
@@ -238,7 +240,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView10" />
 
     <TextView
-        android:id="@+id/userName"
+        android:id="@+id/docName"
         android:layout_width="207dp"
         android:layout_height="68dp"
         android:layout_marginBottom="544dp"
@@ -254,7 +256,7 @@
         app:layout_constraintVertical_bias="0.692" />
 
     <Spinner
-        android:id="@+id/spinner2"
+        android:id="@+id/timesspinner"
         android:layout_width="303dp"
         android:layout_height="57dp"
         android:background="@drawable/custom_input"
@@ -264,7 +266,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ulemail"
+        app:layout_constraintTop_toBottomOf="@+id/datepickerbooking"
         app:layout_constraintVertical_bias="0.176" />
 
 

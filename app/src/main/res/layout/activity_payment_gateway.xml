@@ -43,7 +43,7 @@
         android:textColor="@color/primary_gray"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ulemail2" />
+        app:layout_constraintTop_toBottomOf="@+id/expireDate" />
 
     <TextView
         android:id="@+id/userName6"
@@ -82,13 +82,13 @@
         android:layout_marginTop="52dp"
         android:fontFamily="@font/inria_sans_bold"
         android:gravity="end"
-        android:text="LKR XXX"
+        android:text="LKR 1000"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.455"
         app:layout_constraintStart_toEndOf="@+id/userName3"
-        app:layout_constraintTop_toBottomOf="@+id/ulemail4" />
+        app:layout_constraintTop_toBottomOf="@+id/cvv" />
 
     <TextView
         android:id="@+id/userName4"
@@ -117,7 +117,7 @@
         app:layout_constraintTop_toBottomOf="@+id/userName4" />
 
     <EditText
-        android:id="@+id/ulemail4"
+        android:id="@+id/cvv"
         android:layout_width="120dp"
         android:layout_height="57dp"
         android:layout_marginTop="24dp"
@@ -125,6 +125,7 @@
         android:layout_marginBottom="252dp"
         android:background="@drawable/custom_input"
         android:ems="10"
+        android:maxLength="3"
         android:fontFamily="@font/inria_sans_regular"
         android:hint="CVV"
         android:inputType="number|numberPassword"
@@ -134,16 +135,16 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.685"
-        app:layout_constraintStart_toEndOf="@+id/ulemail2"
-        app:layout_constraintTop_toBottomOf="@+id/ulemail" />
+        app:layout_constraintStart_toEndOf="@+id/expireDate"
+        app:layout_constraintTop_toBottomOf="@+id/cardNo" />
 
     <Button
-        android:id="@+id/diagSavebtn4"
+        android:id="@+id/paymentGatewaybtn"
         android:layout_width="303dp"
         android:layout_height="57dp"
         android:background="@drawable/btn_blue_background"
         android:fontFamily="@font/inria_sans_regular"
-        android:text="Pay LKR XXX"
+        android:text="Pay LKR 1750"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="20sp"
@@ -155,11 +156,12 @@
         app:layout_constraintVertical_bias="0.357" />
 
     <EditText
-        android:id="@+id/ulemail"
+        android:id="@+id/cardNo"
         android:layout_width="303dp"
         android:layout_height="57dp"
         android:background="@drawable/custom_input"
         android:ems="10"
+        android:maxLength="16"
         android:fontFamily="@font/inria_sans_regular"
         android:hint="Card Number"
         android:inputType="number"
@@ -173,13 +175,14 @@
         app:layout_constraintVertical_bias="0.158" />
 
     <EditText
-        android:id="@+id/ulemail2"
+        android:id="@+id/expireDate"
         android:layout_width="160dp"
         android:layout_height="57dp"
         android:layout_marginStart="56dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/custom_input"
         android:ems="10"
+        android:maxLength="4"
         android:fontFamily="@font/inria_sans_regular"
         android:hint="MM/YY"
         android:inputType="datetime|date"
@@ -188,7 +191,7 @@
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/imageView8"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ulemail"
+        app:layout_constraintTop_toBottomOf="@+id/cardNo"
         app:layout_constraintVertical_bias="0.015" />
 
     <ImageView
@@ -353,7 +356,7 @@
         android:layout_width="67dp"
         android:layout_height="59dp"
         android:layout_marginStart="132dp"
-        app:layout_constraintBottom_toTopOf="@+id/ulemail"
+        app:layout_constraintBottom_toTopOf="@+id/cardNo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView10"
         app:layout_constraintVertical_bias="0.618"

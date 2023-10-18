@@ -8,7 +8,7 @@ class SearchDoctor : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_search_doctor)
 
-        val spinner = findViewById<Spinner>(R.id.spinner2)
+        val spinner = findViewById<Spinner>(R.id.timesspinner)
 
         val items = listOf("kamal", "nimal")
 

@@ -33,7 +33,7 @@
         app:srcCompat="@drawable/rectbg" />
 
     <EditText
-        android:id="@+id/ulemail4"
+        android:id="@+id/ppNumberPayment"
         android:layout_width="303dp"
         android:layout_height="57dp"
         android:layout_marginTop="24dp"
@@ -49,11 +49,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ulemail3"
+        app:layout_constraintTop_toBottomOf="@+id/pAddressPayment"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/diagSavebtn4"
+        android:id="@+id/doctorpaybtn"
         android:layout_width="303dp"
         android:layout_height="57dp"
         android:background="@drawable/btn_blue_background"
@@ -65,49 +65,51 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ulemail4"
+        app:layout_constraintTop_toBottomOf="@+id/ppNumberPayment"
         app:layout_constraintVertical_bias="0.225" />
 
     <EditText
-        android:id="@+id/ulemail"
+        android:id="@+id/pNamepayment"
         android:layout_width="303dp"
         android:layout_height="57dp"
         android:background="@drawable/custom_input"
         android:ems="10"
+        android:focusable="false"
         android:fontFamily="@font/inria_sans_regular"
         android:hint="Patient Name"
         android:inputType="text|textPersonName"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
-        android:textColor="@color/black"
+        android:textColor="@color/material_dynamic_neutral60"
         app:layout_constraintBottom_toTopOf="@+id/imageView8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userName2"
+        app:layout_constraintTop_toBottomOf="@+id/docPayTime"
         app:layout_constraintVertical_bias="0.142" />
 
     <EditText
-        android:id="@+id/ulemail2"
+        android:id="@+id/pEmailPayment"
         android:layout_width="303dp"
         android:layout_height="57dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/custom_input"
         android:ems="10"
+        android:focusable="false"
         android:fontFamily="@font/inria_sans_regular"
         android:hint="Email"
         android:inputType="textEmailAddress"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
-        android:textColor="@color/black"
+        android:textColor="@color/material_dynamic_neutral60"
         app:layout_constraintBottom_toTopOf="@+id/imageView8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ulemail"
+        app:layout_constraintTop_toBottomOf="@+id/pNamepayment"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/ulemail3"
+        android:id="@+id/pAddressPayment"
         android:layout_width="303dp"
         android:layout_height="85dp"
         android:layout_marginTop="24dp"
@@ -123,7 +125,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ulemail2"
+        app:layout_constraintTop_toBottomOf="@+id/pEmailPayment"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
@@ -284,7 +286,7 @@
         app:layout_constraintVertical_bias="0.768" />
 
     <TextView
-        android:id="@+id/userName"
+        android:id="@+id/docPayDate"
         android:layout_width="153dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="92dp"
@@ -297,19 +299,20 @@
         app:layout_constraintTop_toTopOf="@+id/imageView10" />
 
     <TextView
-        android:id="@+id/userName2"
-        android:layout_width="150dp"
+        android:id="@+id/docPayTime"
+        android:layout_width="187dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
         android:layout_marginEnd="84dp"
         android:fontFamily="@font/inria_sans_regular"
         android:text="Time"
         android:textColor="@color/primary_gray"
-        android:textSize="20sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView8"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView9"
-        app:layout_constraintTop_toBottomOf="@+id/userName"
+        app:layout_constraintTop_toBottomOf="@+id/docPayDate"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
@@ -317,7 +320,7 @@
         android:layout_width="68dp"
         android:layout_height="76dp"
         android:layout_marginStart="80dp"
-        app:layout_constraintBottom_toTopOf="@+id/ulemail"
+        app:layout_constraintBottom_toTopOf="@+id/pNamepayment"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView10"
         app:layout_constraintVertical_bias="0.646"
