@@ -10,10 +10,10 @@
     <TextView
         android:id="@+id/docNamePtxt"
         android:layout_width="228dp"
-        android:layout_height="81dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="26dp"
         android:fontFamily="@font/inria_sans_bold"
-        android:text="Booking No #XXXX"
+        android:text="Booking No"
         android:textColor="@color/white"
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView10"
@@ -21,6 +21,21 @@
         app:layout_constraintHorizontal_bias="0.238"
         app:layout_constraintStart_toEndOf="@+id/backtoHomebtn"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/docNamePtxt7"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inria_sans_bold"
+        android:text="#XXXX"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toEndOf="@+id/backtoHomebtn"
+        app:layout_constraintTop_toBottomOf="@+id/docNamePtxt"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView

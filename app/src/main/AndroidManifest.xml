@@ -13,8 +13,14 @@
         android:theme="@style/Theme.Ayurveda"
         tools:targetApi="31">
 <!--        <activity-->
-<!--            android:name=".StoreHome"-->
+<!--            android:name=".StoreCart"-->
 <!--            android:exported="false" />-->
+        <!-- <activity -->
+        <!-- android:name=".StorePaymentSuccess" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".StoreHome" -->
+        <!-- android:exported="false" /> -->
         <activity
             android:name=".YourProducts"
             android:exported="false" /> <!-- <activity -->
@@ -85,7 +91,7 @@
             android:name=".UsersLogin"
             android:exported="false" />
         <activity
-            android:name=".StoreHome"
+            android:name=".StoreCart"
             android:exported="true"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
