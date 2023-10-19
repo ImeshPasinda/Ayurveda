@@ -3,12 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="240dp"
+    android:layout_height="250dp"
     android:layout_marginRight="45dp"
     android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/imageView18"
+            android:id="@+id/prodImg"
             android:layout_width="166dp"
             android:layout_height="145dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -18,61 +18,74 @@
             tools:layout_editor_absoluteY="16dp" />
 
         <TextView
-            android:id="@+id/textView18"
+            android:id="@+id/prodNameEn"
             android:layout_width="128dp"
             android:layout_height="21dp"
-            android:layout_marginStart="1dp"
             android:layout_marginTop="12dp"
             android:fontFamily="@font/inria_sans_bold"
-            android:text="Sample Item"
+            android:text="Product Name En"
             android:textColor="@color/light_black"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.886"
+            app:layout_constraintHorizontal_bias="0.743"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView18" />
+            app:layout_constraintTop_toBottomOf="@+id/prodImg" />
 
         <TextView
-            android:id="@+id/textView20"
-            android:layout_width="79dp"
+            android:id="@+id/prodPrice"
+            android:layout_width="66dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="1dp"
             android:fontFamily="@font/inria_sans_bold"
             android:padding="0dp"
-            android:text="Rs.150"
+            android:text="Price"
+            android:textColor="@color/light_black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/prodPrice2"
+            app:layout_constraintTop_toBottomOf="@+id/prodNameSn"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/prodPrice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:fontFamily="@font/inria_sans_bold"
+            android:padding="0dp"
+            android:text="Rs."
             android:textColor="@color/light_black"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.37"
+            app:layout_constraintHorizontal_bias="0.176"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView19"
+            app:layout_constraintTop_toBottomOf="@+id/prodNameSn"
             app:layout_constraintVertical_bias="0.0" />
 
         <TextView
-            android:id="@+id/textView19"
+            android:id="@+id/prodNameSn"
             android:layout_width="113dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="5dp"
+            android:layout_marginEnd="8dp"
             android:fontFamily="@font/inria_sans_regular"
             android:padding="2dp"
-            android:text="පස් පංගුව"
+            android:text="Product Name Sn"
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.649"
+            app:layout_constraintHorizontal_bias="0.571"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+            app:layout_constraintTop_toBottomOf="@+id/prodNameEn" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton4"
+            android:id="@+id/addcartbtn"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:clickable="true"
             app:backgroundTint="@color/primary_blue"
             app:fabSize="mini"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView18"
+            app:layout_constraintBottom_toBottomOf="@+id/prodImg"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"

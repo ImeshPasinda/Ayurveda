@@ -18,15 +18,15 @@
          <activity
          android:name=".StorePaymentSuccess"
          android:exported="false" />
-        <activity
-         android:name=".StoreHome"
-         android:exported="false" />
+<!--        <activity-->
+<!--         android:name=".StoreHome"-->
+<!--         android:exported="false" />-->
         <activity
             android:name=".YourProducts"
             android:exported="false" />
-<!--         <activity-->
-<!--         android:name=".UserAppointments"-->
-<!--         android:exported="false" />-->
+         <activity
+         android:name=".UserAppointments"
+         android:exported="false" />
          <activity
          android:name=".DoctorBooking"
          android:exported="false" />
@@ -92,7 +92,10 @@
             android:name=".UsersLogin"
             android:exported="false" />
         <activity
-            android:name=".UserAppointments"
+            android:name=".ProductsView"
+            android:exported="false" />
+        <activity
+            android:name=".StoreHome"
             android:exported="true"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>

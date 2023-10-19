@@ -70,7 +70,7 @@
         tools:listitem="@layout/list_item_store_products" />
 
     <SearchView
-        android:id="@+id/searchView"
+        android:id="@+id/storeSearch"
         android:layout_width="363dp"
         android:layout_height="54dp"
         android:background="@drawable/search_input"
@@ -106,6 +106,7 @@
         android:layout_marginTop="4dp"
         android:fontFamily="@font/inria_sans_regular"
         android:text="Store"
+        android:textColor="@color/primary_blue"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -123,7 +124,6 @@
         android:layout_marginBottom="4dp"
         android:fontFamily="@font/inria_sans_regular"
         android:text="Home"
-        android:textColor="@color/primary_blue"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -175,7 +175,7 @@
         android:textColor="@color/primary_gray"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+        app:layout_constraintTop_toBottomOf="@+id/storeSearch" />
 
     <ImageButton
         android:id="@+id/imageButton4"
@@ -186,7 +186,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.912"
         app:layout_constraintStart_toEndOf="@+id/cattxt"
-        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+        app:layout_constraintTop_toBottomOf="@+id/storeSearch" />
 
     <ImageButton
         android:id="@+id/imageButton8"
@@ -204,7 +204,7 @@
         android:layout_height="30dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="112dp"
-        android:background="@drawable/store_icon"
+        android:background="@drawable/storeactive"
         app:layout_constraintStart_toEndOf="@+id/imageButton8"
         app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
@@ -215,7 +215,7 @@
         android:layout_marginStart="48dp"
         android:layout_marginTop="108dp"
         android:layout_marginEnd="48dp"
-        android:background="@drawable/home_icon_active"
+        android:background="@drawable/home_icon"
         app:layout_constraintEnd_toStartOf="@+id/imageButton11"
         app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toEndOf="@+id/imageButton9"

@@ -19,12 +19,12 @@
         app:layout_constraintVertical_bias="0.768" />
 
     <TextView
-        android:id="@+id/docNamePtxt"
+        android:id="@+id/prodNameEnpage"
         android:layout_width="295dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/inria_sans_bold"
-        android:text="Passpanguwa"
+        android:text="Product.Name.En"
         android:textColor="@color/white"
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView10"
@@ -35,24 +35,24 @@
         app:layout_constraintVertical_bias="0.781" />
 
     <TextView
-        android:id="@+id/docNamePtxt2"
+        android:id="@+id/prodNameSnpage"
         android:layout_width="295dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/inria_sans_regular"
-        android:text="පස් පංගුව"
+        android:text="Product.Name.Sn"
         android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.543"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/docNamePtxt" />
+        app:layout_constraintTop_toBottomOf="@+id/prodNameEnpage" />
 
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@drawable/cart"
-        app:layout_constraintBottom_toBottomOf="@+id/docNamePtxt"
+        app:layout_constraintBottom_toBottomOf="@+id/prodNameEnpage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.929"
         app:layout_constraintStart_toEndOf="@+id/backtoHomebtn2"
@@ -69,7 +69,7 @@
         app:srcCompat="@drawable/rectbg" />
 
     <Button
-        android:id="@+id/diagSavebtn5"
+        android:id="@+id/addtocart"
         android:layout_width="303dp"
         android:layout_height="57dp"
         android:background="@drawable/btn_blue_background"
@@ -80,10 +80,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintHorizontal_bias="0.527"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/docNamePtxt6"
-        app:layout_constraintVertical_bias="0.607" />
+        app:layout_constraintTop_toBottomOf="@+id/proddescpage"
+        app:layout_constraintVertical_bias="0.498" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -100,6 +100,7 @@
         android:id="@+id/docNamePtxt9"
         android:layout_width="140dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:layout_marginBottom="24dp"
         android:alpha="0.5"
         android:fontFamily="@font/inria_sans_regular"
@@ -109,76 +110,78 @@
         app:layout_constraintBottom_toTopOf="@+id/diagSavebtn5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.21"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/proddescpage" />
 
     <TextView
-        android:id="@+id/docNamePtxt6"
+        android:id="@+id/proddescpage"
         android:layout_width="298dp"
         android:layout_height="148dp"
         android:layout_marginTop="12dp"
         android:fontFamily="@font/inria_sans_regular"
-        android:text="The ‘Paspanguwa’ traditional medicinal  formula can be obtained as air-tight sachets or packets . The ailments, for which this can be used as per the instructions in the packaging, are colds, coughs, headaches, fever, and overall body aches."
+        android:text="Description"
         android:textColor="@color/light_black"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/docNamePtxt5" />
+        app:layout_constraintTop_toBottomOf="@+id/prodSubNameSnpage" />
 
     <TextView
-        android:id="@+id/docNamePtxt8"
+        android:id="@+id/prodpricepage"
         android:layout_width="154dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="164dp"
         android:fontFamily="@font/inria_sans_bold"
-        android:text="Rs.XXX"
+        android:text="Price"
         android:textColor="@color/light_black"
         android:textSize="28sp"
         app:layout_constraintBottom_toTopOf="@+id/diagSavebtn5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.221"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/docNamePtxt10"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/docNamePtxt9"
+        app:layout_constraintVertical_bias="0.229" />
 
     <TextView
-        android:id="@+id/docNamePtxt5"
+        android:id="@+id/prodpricepage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inria_sans_bold"
+        android:text="Rs."
+        android:textColor="@color/light_black"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/diagSavebtn5"
+        app:layout_constraintEnd_toStartOf="@+id/prodpricepage"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/docNamePtxt9"
+        app:layout_constraintVertical_bias="0.229" />
+
+    <TextView
+        android:id="@+id/prodSubNameSnpage"
         android:layout_width="295dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/inria_sans_regular"
-        android:text="පස් පංගුව"
+        android:text="Product.Name.Sn"
         android:textColor="@color/primary_gray"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/docNamePtxt4" />
+        app:layout_constraintTop_toBottomOf="@+id/prodSubNameEnpage" />
 
     <TextView
-        android:id="@+id/docNamePtxt4"
+        android:id="@+id/prodSubNameEnpage"
         android:layout_width="295dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:fontFamily="@font/inria_sans_bold"
-        android:text="Passpanguwa"
+        android:text="Product.Name.En"
         android:textColor="@color/light_black"
         android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView19" />
-
-    <TextView
-        android:id="@+id/docNamePtxt10"
-        android:layout_width="298dp"
-        android:layout_height="82dp"
-        android:fontFamily="@font/inria_sans_regular"
-        android:text="කිවිසුම් යාම, නාසයෙන් දියර ගැලීම, සිරුරේ කැක්කුම, හිසරදය, කැස්ස, උණ සහ සීතල ආශ්‍රිත සියලුම රෝග ලක්ෂණ සඳහා භාවිතා කළ හැක."
-        android:textColor="@color/primary_gray"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/docNamePtxt6" />
+        app:layout_constraintTop_toBottomOf="@+id/prodImgpage" />
 
     <TextView
         android:id="@+id/textView11"
@@ -316,14 +319,14 @@
         app:layout_constraintVertical_bias="0.272" />
 
     <ImageView
-        android:id="@+id/imageView19"
+        android:id="@+id/prodImgpage"
         android:layout_width="132dp"
         android:layout_height="131dp"
         android:layout_marginTop="72dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/docNamePtxt2"
+        app:layout_constraintTop_toBottomOf="@+id/prodNameSnpage"
         app:srcCompat="@drawable/storeicons" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
