@@ -33,7 +33,7 @@
         app:srcCompat="@drawable/rectbg" />
 
     <EditText
-        android:id="@+id/ulemail4"
+        android:id="@+id/pppnumberinput"
         android:layout_width="303dp"
         android:layout_height="57dp"
         android:layout_marginTop="24dp"
@@ -49,11 +49,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ulemail3"
+        app:layout_constraintTop_toBottomOf="@+id/ppaddressinput"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/doctorbookbtn"
+        android:id="@+id/pppaynowbtn"
         android:layout_width="303dp"
         android:layout_height="57dp"
         android:background="@drawable/btn_blue_background"
@@ -65,29 +65,30 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ulemail4"
+        app:layout_constraintTop_toBottomOf="@+id/pppnumberinput"
         app:layout_constraintVertical_bias="0.225" />
 
     <EditText
-        android:id="@+id/ulemail"
+        android:id="@+id/ppnameinput"
         android:layout_width="303dp"
         android:layout_height="57dp"
         android:background="@drawable/custom_input"
         android:ems="10"
         android:fontFamily="@font/inria_sans_regular"
         android:hint="Name"
+        android:focusable="false"
         android:inputType="text|textPersonName"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
-        android:textColor="@color/black"
+        android:textColor="@color/material_dynamic_neutral60"
         app:layout_constraintBottom_toTopOf="@+id/imageView8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userName2"
+        app:layout_constraintTop_toBottomOf="@+id/ppnamesn"
         app:layout_constraintVertical_bias="0.166" />
 
     <EditText
-        android:id="@+id/ulemail2"
+        android:id="@+id/ppemailinput"
         android:layout_width="303dp"
         android:layout_height="57dp"
         android:layout_marginTop="24dp"
@@ -95,19 +96,20 @@
         android:ems="10"
         android:fontFamily="@font/inria_sans_regular"
         android:hint="Email"
+        android:focusable="false"
         android:inputType="textEmailAddress"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
-        android:textColor="@color/black"
+        android:textColor="@color/material_dynamic_neutral60"
         app:layout_constraintBottom_toTopOf="@+id/imageView8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ulemail"
+        app:layout_constraintTop_toBottomOf="@+id/ppnameinput"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/ulemail3"
+        android:id="@+id/ppaddressinput"
         android:layout_width="303dp"
         android:layout_height="85dp"
         android:layout_marginTop="24dp"
@@ -123,7 +125,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ulemail2"
+        app:layout_constraintTop_toBottomOf="@+id/ppemailinput"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
@@ -284,7 +286,7 @@
         app:layout_constraintVertical_bias="0.768" />
 
     <TextView
-        android:id="@+id/userName"
+        android:id="@+id/ppnameen"
         android:layout_width="153dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="92dp"
@@ -297,7 +299,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView10" />
 
     <TextView
-        android:id="@+id/userName2"
+        android:id="@+id/ppnamesn"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="84dp"
@@ -308,32 +310,48 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.652"
-        app:layout_constraintStart_toEndOf="@+id/imageView9"
-        app:layout_constraintTop_toBottomOf="@+id/userName"
+        app:layout_constraintStart_toEndOf="@+id/ppimg"
+        app:layout_constraintTop_toBottomOf="@+id/ppnameen"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/userName13"
+        android:id="@+id/ppprice"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="84dp"
+        android:layout_marginEnd="52dp"
         android:fontFamily="@font/inria_sans_bold"
-        android:text="LKR 150"
+        android:text="XXX"
         android:textColor="@color/primary_gray"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView8"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.652"
-        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ppprice2"
+        app:layout_constraintTop_toTopOf="@+id/imageView10"
+        app:layout_constraintVertical_bias="0.247" />
+
+    <TextView
+        android:id="@+id/ppprice2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="104dp"
+        android:fontFamily="@font/inria_sans_bold"
+        android:text="Rs."
+        android:textColor="@color/primary_gray"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toEndOf="@+id/ppimg"
         app:layout_constraintTop_toTopOf="@+id/imageView10"
         app:layout_constraintVertical_bias="0.247" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/ppimg"
         android:layout_width="86dp"
         android:layout_height="99dp"
         android:layout_marginStart="68dp"
-        app:layout_constraintBottom_toTopOf="@+id/ulemail"
+        app:layout_constraintBottom_toTopOf="@+id/ppnameinput"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView10"
         app:layout_constraintVertical_bias="0.768"

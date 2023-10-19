@@ -1,7 +1,11 @@
 package com.example.ayurveda
 
 import android.annotation.SuppressLint
+import android.app.NotificationChannel
+import android.app.NotificationManager
+import android.content.Context
 import android.content.Intent
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -10,6 +14,7 @@ import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.app.NotificationCompat
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
@@ -85,9 +90,20 @@ class PaymentGateway : AppCompatActivity() {
             val cardNumber = cardNumberEditText.text.toString()
             val expiryDate = expiryDateEditText.text.toString()
 
-            if (cvv.isEmpty() || cardNumber.isEmpty() || expiryDate.isEmpty()) {
-                // Show an error message
-                Toast.makeText(this, "Please input all fields", Toast.LENGTH_SHORT).show()
+            // Define regular expressions for the expected formats
+            val cvvPattern = Regex("^\\d{3}$")
+            val cardNumberPattern = Regex("^\\d{16}$")
+            val expiryDatePattern = Regex("^\\d{5}$")
+
+            if (!cardNumberPattern.matches(cardNumber)) {
+                // Show an error message for invalid card number
+                Toast.makeText(this, "Invalid card number", Toast.LENGTH_SHORT).show()
+            } else if (!expiryDatePattern.matches(expiryDate)) {
+                // Show an error message for invalid expiry date
+                Toast.makeText(this, "Invalid expiry date", Toast.LENGTH_SHORT).show()
+            } else if (!cvvPattern.matches(cvv)) {
+                // Show an error message for invalid CVV
+                Toast.makeText(this, "CVV must be 3 numbers", Toast.LENGTH_SHORT).show()
             } else {
                 // All fields are filled, proceed with payment
                 val usersCollection = db.collection("users")
@@ -116,6 +132,31 @@ class PaymentGateway : AppCompatActivity() {
                                 appointmentsCollection.add(appointmentData)
                                     .addOnSuccessListener { documentReference ->
                                         // Data added successfully, start PaymentSuccess activity with bookingDate
+
+                                        val notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+
+                                        val notificationId = 1
+                                        val channelId = "my_channel_id"
+                                        val channelName = "My Channel"
+                                        val importance = NotificationManager.IMPORTANCE_HIGH
+                                        val notificationTitle = "Payement send successfully!"
+                                        val notificationText = "A Transaction for LKR 1750.00 has been debited to $doctorName"
+
+                                        // Create a notification channel (required for Android Oreo and above)
+                                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                                            val channel = NotificationChannel(channelId, channelName, importance)
+                                            notificationManager.createNotificationChannel(channel)
+                                        }
+
+                                        // Create a notification
+                                        val notificationBuilder = NotificationCompat.Builder(this, channelId)
+                                            .setSmallIcon(R.drawable.ayurveda_blue_logo)
+                                            .setContentTitle(notificationTitle)
+                                            .setContentText(notificationText)
+                                            .setAutoCancel(true)
+
+                                        // Show the notification
+                                        notificationManager.notify(notificationId, notificationBuilder.build())
                                         val intent = Intent(this, PaymentSuccess::class.java)
                                         intent.putExtra("refno", ppNumberPayment)
                                         startActivity(intent)

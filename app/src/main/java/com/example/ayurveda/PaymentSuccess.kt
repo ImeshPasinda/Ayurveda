@@ -73,15 +73,6 @@ class PaymentSuccess : AppCompatActivity() {
 
 
 
-
-
-
-
-
-
-
-
-
     }
 
 

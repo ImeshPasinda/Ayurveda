@@ -46,6 +46,12 @@ class Home : AppCompatActivity() {
             val intent = Intent(this, UserAppointments::class.java)
             startActivity(intent)
         }
+        //Store
+        val userStoreButton = findViewById<ImageButton>(R.id.storenavbtn)
+        userStoreButton.setOnClickListener {
+            val intent = Intent(this, StoreHome::class.java)
+            startActivity(intent)
+        }
         // Retrieve the username from the "users" collection
         val usersCollection = db.collection("users")
         usersCollection.whereEqualTo("email", userEmail)

@@ -11,7 +11,7 @@
         android:id="@+id/docNamePtxt"
         android:layout_width="232dp"
         android:layout_height="48dp"
-        android:layout_marginTop="47dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/inria_sans_bold"
         android:text="Profile"
         android:textColor="@color/white"
@@ -21,7 +21,7 @@
         app:layout_constraintHorizontal_bias="0.23"
         app:layout_constraintStart_toEndOf="@+id/backtoHomebtn"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.089" />
+        app:layout_constraintVertical_bias="0.901" />
 
     <ImageView
         android:id="@+id/imageView10"

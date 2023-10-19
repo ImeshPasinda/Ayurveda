@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="26dp"
         android:fontFamily="@font/inria_sans_bold"
-        android:text="Order No "
+        android:text="Order No"
         android:textColor="@color/white"
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView10"
@@ -24,7 +24,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/docNamePtxt3"
+        android:id="@+id/orderrefno"
         android:layout_width="228dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/inria_sans_bold"
@@ -67,7 +67,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/inria_sans_regular"
-        android:text="Order no: #"
+        android:text="Order no: "
         android:textColor="@color/primary_gray"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView8"
@@ -78,7 +78,7 @@
         app:layout_constraintVertical_bias="0.006" />
 
     <TextView
-        android:id="@+id/userName11"
+        android:id="@+id/suborderrefno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -112,7 +112,6 @@
         android:layout_marginTop="4dp"
         android:fontFamily="@font/inria_sans_regular"
         android:text="Store"
-        android:textColor="@color/primary_blue"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -176,7 +175,7 @@
         android:layout_height="30dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="112dp"
-        android:background="@drawable/appointments_icon"
+        android:background="@drawable/appointment_blue"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
@@ -186,7 +185,7 @@
         android:layout_height="30dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="112dp"
-        android:background="@drawable/storeactive"
+        android:background="@drawable/store_icon"
         app:layout_constraintStart_toEndOf="@+id/imageButton8"
         app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
@@ -231,6 +230,7 @@
         android:layout_marginTop="4dp"
         android:fontFamily="@font/inria_sans_regular"
         android:text="Appointments"
+        android:textColor="@color/primary_blue"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

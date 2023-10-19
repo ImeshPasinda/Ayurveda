@@ -135,7 +135,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.273"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton9"
+        app:layout_constraintTop_toBottomOf="@+id/storenavbtn"
         app:layout_constraintVertical_bias="0.272" />
 
     <TextView
@@ -278,7 +278,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
     <ImageButton
-        android:id="@+id/imageButton9"
+        android:id="@+id/storenavbtn"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="50dp"
@@ -297,7 +297,7 @@
         android:background="@drawable/home_icon_active"
         app:layout_constraintEnd_toStartOf="@+id/imageButton11"
         app:layout_constraintHorizontal_bias="0.51"
-        app:layout_constraintStart_toEndOf="@+id/imageButton9"
+        app:layout_constraintStart_toEndOf="@+id/storenavbtn"
         app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
     <ImageButton

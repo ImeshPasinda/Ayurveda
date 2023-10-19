@@ -45,16 +45,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toEndOf="@+id/userName4"
-        app:layout_constraintTop_toBottomOf="@+id/ulemail4" />
+        app:layout_constraintTop_toBottomOf="@+id/ppcvv" />
 
     <TextView
-        android:id="@+id/userName8"
+        android:id="@+id/finaltotprice"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:fontFamily="@font/inria_sans_bold"
         android:gravity="end"
-        android:text="LKR 200"
+        android:text="XXX"
         android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -73,7 +73,7 @@
         android:textColor="@color/primary_gray"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ulemail2" />
+        app:layout_constraintTop_toBottomOf="@+id/pexpireDate" />
 
     <TextView
         android:id="@+id/userName5"
@@ -89,7 +89,7 @@
         app:layout_constraintTop_toBottomOf="@+id/userName4" />
 
     <EditText
-        android:id="@+id/ulemail4"
+        android:id="@+id/ppcvv"
         android:layout_width="120dp"
         android:layout_height="57dp"
         android:layout_marginTop="24dp"
@@ -100,22 +100,23 @@
         android:fontFamily="@font/inria_sans_regular"
         android:hint="CVV"
         android:inputType="number|numberPassword"
+        android:maxLength="3"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/imageView8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.685"
-        app:layout_constraintStart_toEndOf="@+id/ulemail2"
-        app:layout_constraintTop_toBottomOf="@+id/ulemail" />
+        app:layout_constraintStart_toEndOf="@+id/pexpireDate"
+        app:layout_constraintTop_toBottomOf="@+id/pcardNo" />
 
     <Button
-        android:id="@+id/doctorbookbtn"
+        android:id="@+id/ppayBtn"
         android:layout_width="303dp"
         android:layout_height="57dp"
         android:background="@drawable/btn_blue_background"
         android:fontFamily="@font/inria_sans_regular"
-        android:text="Pay LKR XXX"
+        android:text="Pay"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="20sp"
@@ -127,7 +128,7 @@
         app:layout_constraintVertical_bias="0.357" />
 
     <EditText
-        android:id="@+id/ulemail"
+        android:id="@+id/pcardNo"
         android:layout_width="303dp"
         android:layout_height="57dp"
         android:background="@drawable/custom_input"
@@ -135,6 +136,7 @@
         android:fontFamily="@font/inria_sans_regular"
         android:hint="Card Number"
         android:inputType="number"
+        android:maxLength="16"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
         android:textColor="@color/black"
@@ -145,7 +147,7 @@
         app:layout_constraintVertical_bias="0.158" />
 
     <EditText
-        android:id="@+id/ulemail2"
+        android:id="@+id/pexpireDate"
         android:layout_width="160dp"
         android:layout_height="57dp"
         android:layout_marginStart="56dp"
@@ -155,12 +157,13 @@
         android:fontFamily="@font/inria_sans_regular"
         android:hint="MM/YY"
         android:inputType="datetime|date"
+        android:maxLength="5"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/imageView8"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ulemail"
+        app:layout_constraintTop_toBottomOf="@+id/pcardNo"
         app:layout_constraintVertical_bias="0.015" />
 
     <ImageView
@@ -325,7 +328,7 @@
         android:layout_width="67dp"
         android:layout_height="59dp"
         android:layout_marginStart="132dp"
-        app:layout_constraintBottom_toTopOf="@+id/ulemail"
+        app:layout_constraintBottom_toTopOf="@+id/pcardNo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView10"
         app:layout_constraintVertical_bias="0.618"
