@@ -25,7 +25,7 @@
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
-        android:id="@+id/doctorNameSn"
+        android:id="@+id/appDoneDocName"
         android:layout_width="200dp"
         android:layout_height="51dp"
         android:layout_marginTop="4dp"
@@ -40,7 +40,7 @@
         app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
-        android:id="@+id/doctorNameEn"
+        android:id="@+id/appDoneDocDate"
         android:layout_width="231dp"
         android:layout_height="21dp"
         android:alpha="0.5"
@@ -59,7 +59,7 @@
         tools:ignore="TextContrastCheck" />
 
     <TextView
-        android:id="@+id/doctorNameEn2"
+        android:id="@+id/appDoneDocTime"
         android:layout_width="231dp"
         android:layout_height="21dp"
         android:alpha="0.5"
@@ -82,7 +82,7 @@
         android:layout_width="109dp"
         android:layout_height="108dp"
         android:alpha="0.5"
-        app:layout_constraintEnd_toStartOf="@+id/doctorNameSn"
+        app:layout_constraintEnd_toStartOf="@+id/appDoneDocName"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/avatarcaedview"

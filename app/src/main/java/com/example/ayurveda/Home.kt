@@ -2,6 +2,7 @@ package com.example.ayurveda
 
 import android.animation.AnimatorInflater
 import android.animation.ObjectAnimator
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -23,6 +24,7 @@ class Home : AppCompatActivity() {
 
 
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
@@ -32,9 +34,16 @@ class Home : AppCompatActivity() {
 
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
+        //Profile
         val userNavButton = findViewById<ImageButton>(R.id.userProfileNavbtn)
         userNavButton.setOnClickListener {
             val intent = Intent(this, UserProfile::class.java)
+            startActivity(intent)
+        }
+        //Appointments
+        val userAppointmentButton = findViewById<ImageButton>(R.id.userAppointmentsbtn)
+        userAppointmentButton.setOnClickListener {
+            val intent = Intent(this, UserAppointments::class.java)
             startActivity(intent)
         }
         // Retrieve the username from the "users" collection
