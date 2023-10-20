@@ -73,27 +73,39 @@ class UsersRegister : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            // Save user data (excluding password) to Firestore
-            val userData = hashMapOf(
-                "username" to username,
-                "email" to email,
-                "password" to password
-            )
-
+            // Check if the email already exists in the database
             firestore.collection("users")
-                .add(userData)
-                .addOnSuccessListener { documentReference ->
+                .whereEqualTo("email", email)
+                .get()
+                .addOnSuccessListener { documents ->
+                    if (documents.isEmpty) {
+                        // Email is not in use, so we can proceed to add the user
+                        val userData = hashMapOf(
+                            "username" to username,
+                            "email" to email,
+                            "password" to password
+                        )
 
-                    val sessionManager = SessionManager(this)
-                    sessionManager.saveUserSession(email)
-                    val intent = Intent(this, WelcomeUser::class.java)
-
-                    startActivity(intent)
-                    finish()
+                        firestore.collection("users")
+                            .add(userData)
+                            .addOnSuccessListener { documentReference ->
+                                val sessionManager = SessionManager(this)
+                                sessionManager.saveUserSession(email)
+                                val intent = Intent(this, WelcomeUser::class.java)
+                                startActivity(intent)
+                                finish()
+                            }
+                            .addOnFailureListener { e ->
+                                editTextUsername.error = "Failed to register user: ${e.message}"
+                            }
+                    } else {
+                        editTextEmail.error = "Email is already in use"
+                    }
                 }
                 .addOnFailureListener { e ->
-                    editTextUsername.error = "Failed to register user: ${e.message}"
+                    editTextUsername.error = "Failed to check email availability: ${e.message}"
                 }
         }
+
     }
 }

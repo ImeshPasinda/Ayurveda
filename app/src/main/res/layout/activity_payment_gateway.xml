@@ -5,21 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primary_blue"
-    tools:context=".PaymentGateway">
+    tools:context=".DoctorProfile">
+
     <TextView
-        android:id="@+id/tvpay"
-        android:layout_width="278dp"
-        android:layout_height="55dp"
+        android:id="@+id/docNamePtxt"
+        android:layout_width="228dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="26dp"
         android:fontFamily="@font/inria_sans_bold"
-        android:text="Payement Details"
+        android:text="Payment Details"
         android:textColor="@color/white"
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView10"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.237"
-        app:layout_constraintStart_toEndOf="@+id/imageButton45"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toEndOf="@+id/backtoHomebtn"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.879" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -30,6 +32,168 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/rectbg" />
 
+    <TextView
+        android:id="@+id/userName3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/inria_sans_regular"
+        android:text="Doctor Chargers"
+        android:textColor="@color/primary_gray"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expireDate" />
+
+    <TextView
+        android:id="@+id/userName6"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/inria_sans_bold"
+        android:gravity="end"
+        android:text="LKR 250"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toEndOf="@+id/userName4"
+        app:layout_constraintTop_toBottomOf="@+id/userName7" />
+
+    <TextView
+        android:id="@+id/userName8"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/inria_sans_bold"
+        android:gravity="end"
+        android:text="LKR 1750"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toEndOf="@+id/userName5"
+        app:layout_constraintTop_toBottomOf="@+id/userName6" />
+
+    <TextView
+        android:id="@+id/userName7"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/inria_sans_bold"
+        android:gravity="end"
+        android:text="LKR 1000"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toEndOf="@+id/userName3"
+        app:layout_constraintTop_toBottomOf="@+id/cvv" />
+
+    <TextView
+        android:id="@+id/userName4"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/inria_sans_regular"
+        android:text="Booking Chargers"
+        android:textColor="@color/primary_gray"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userName3" />
+
+    <TextView
+        android:id="@+id/userName5"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/inria_sans_bold"
+        android:text="Total"
+        android:textColor="@color/primary_gray"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userName4" />
+
+    <EditText
+        android:id="@+id/cvv"
+        android:layout_width="120dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="252dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:maxLength="3"
+        android:fontFamily="@font/inria_sans_regular"
+        android:hint="CVV"
+        android:inputType="number|numberPassword"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.685"
+        app:layout_constraintStart_toEndOf="@+id/expireDate"
+        app:layout_constraintTop_toBottomOf="@+id/cardNo" />
+
+    <Button
+        android:id="@+id/paymentGatewaybtn"
+        android:layout_width="303dp"
+        android:layout_height="57dp"
+        android:background="@drawable/btn_blue_background"
+        android:fontFamily="@font/inria_sans_regular"
+        android:text="Pay LKR 1750"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userName5"
+        app:layout_constraintVertical_bias="0.357" />
+
+    <EditText
+        android:id="@+id/cardNo"
+        android:layout_width="303dp"
+        android:layout_height="57dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:maxLength="16"
+        android:fontFamily="@font/inria_sans_regular"
+        android:hint="Card Number"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13"
+        app:layout_constraintVertical_bias="0.158" />
+
+    <EditText
+        android:id="@+id/expireDate"
+        android:layout_width="160dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:fontFamily="@font/inria_sans_regular"
+        android:hint="MM/YY"
+        android:inputType="datetime|date"
+        android:maxLength="5"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/imageView8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardNo"
+        app:layout_constraintVertical_bias="0.015" />
+
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="wrap_content"
@@ -37,10 +201,9 @@
         android:layout_marginBottom="-55dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.967"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/navcard"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="17dp" />
+        tools:layout_editor_absoluteX="0dp" />
 
     <TextView
         android:id="@+id/textView11"
@@ -72,7 +235,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton10"
+        app:layout_constraintTop_toBottomOf="@+id/homenavbtn_1"
         app:layout_constraintVertical_bias="0.333" />
 
     <TextView
@@ -113,7 +276,7 @@
         android:layout_height="30dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="112dp"
-        android:background="@drawable/appointments_icon"
+        android:background="@drawable/appointment_blue"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
@@ -128,7 +291,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
     <ImageButton
-        android:id="@+id/imageButton10"
+        android:id="@+id/homenavbtn_1"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="48dp"
@@ -164,10 +327,11 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="-2dp"
+        android:layout_marginStart="-3dp"
         android:layout_marginTop="4dp"
         android:fontFamily="@font/inria_sans_regular"
         android:text="Appointments"
+        android:textColor="@color/primary_blue"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -177,7 +341,7 @@
         app:layout_constraintVertical_bias="0.272" />
 
     <ImageButton
-        android:id="@+id/imageButton45"
+        android:id="@+id/backtoHomebtn"
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_marginStart="28dp"
@@ -187,118 +351,27 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.768" />
 
-
-    <EditText
-        android:id="@+id/cardno"
-        android:layout_width="303dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="28dp"
-        android:background="@drawable/custom_input"
-        android:ems="10"
-        android:fontFamily="@font/inria_sans_regular"
-        android:hint="CardNo"
-        android:inputType="textEmailAddress"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:textColor="@color/material_dynamic_neutral50"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.435"
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="67dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="132dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardNo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton12" />
-
-    <EditText
-        android:id="@+id/medication"
-        android:layout_width="303dp"
-        android:layout_height="57dp"
-        android:background="@drawable/custom_input"
-        android:ems="10"
-        android:fontFamily="@font/inria_sans_regular"
-        android:hint="Card Holder Name"
-        android:inputType="textPassword"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:textColor="@color/material_dynamic_neutral50"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardno"
-        app:layout_constraintVertical_bias="0.065" />
-
-    <EditText
-        android:id="@+id/cvv"
-        android:layout_width="303dp"
-        android:layout_height="57dp"
-        android:background="@drawable/custom_input"
-        android:ems="10"
-        android:fontFamily="@font/inria_sans_regular"
-        android:hint="CVV"
-        android:inputType="textPassword"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:textColor="@color/material_dynamic_neutral50"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/medication"
-        app:layout_constraintVertical_bias="0.092" />
-
-    <EditText
-        android:id="@+id/expdate"
-        android:layout_width="303dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/custom_input"
-        android:ems="10"
-        android:fontFamily="@font/inria_sans_regular"
-        android:hint="Date of Expire"
-        android:inputType="textPassword"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:textColor="@color/material_dynamic_neutral50"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cvv" />
-
-    <Button
-        android:id="@+id/diagSavebtn"
-        android:layout_width="134dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="28dp"
-        android:background="@drawable/btn_blue_background"
-        android:fontFamily="@font/inria_sans_regular"
-        android:text="Pay LKR"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/expdate" />
-
-    <ImageButton
-        android:id="@+id/imageButton12"
-        android:layout_width="110dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="92dp"
-        android:background="@drawable/mastercard"
-        android:scaleType="centerInside"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.252"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView10" />
-
-    <ImageButton
-        android:id="@+id/imageButton13"
-        android:layout_width="130dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="100dp"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.589"
-        app:layout_constraintStart_toEndOf="@+id/imageButton12"
-        app:layout_constraintTop_toBottomOf="@+id/tvpay"
+        app:layout_constraintTop_toTopOf="@+id/imageView10"
+        app:layout_constraintVertical_bias="0.618"
         app:srcCompat="@drawable/visa" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="54dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="96dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="@+id/imageView10"
+        app:srcCompat="@drawable/mastercard" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

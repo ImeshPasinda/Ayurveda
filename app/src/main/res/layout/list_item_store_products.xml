@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_marginRight="45dp"
+    android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/prodImg"
+            android:layout_width="166dp"
+            android:layout_height="145dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.01"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/storeicons"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/prodNameEn"
+            android:layout_width="128dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/inria_sans_bold"
+            android:text="Product Name En"
+            android:textColor="@color/light_black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.743"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prodImg" />
+
+        <TextView
+            android:id="@+id/prodPrice"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inria_sans_bold"
+            android:padding="0dp"
+            android:text="Price"
+            android:textColor="@color/light_black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/prodPrice2"
+            app:layout_constraintTop_toBottomOf="@+id/prodNameSn"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/prodPrice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:fontFamily="@font/inria_sans_bold"
+            android:padding="0dp"
+            android:text="Rs."
+            android:textColor="@color/light_black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.176"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prodNameSn"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/prodNameSn"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/inria_sans_regular"
+            android:padding="2dp"
+            android:text="Product Name Sn"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.571"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prodNameEn" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addcartbtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:clickable="true"
+            app:backgroundTint="@color/primary_blue"
+            app:fabSize="mini"
+            app:layout_constraintBottom_toBottomOf="@+id/prodImg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/baseline_add_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,6 +4,7 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
@@ -14,6 +15,10 @@ class DoctorProfile : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_doctor_profile)
+
+
+
+
 
 
         val backButton = findViewById<ImageButton>(R.id.backtoHomebtn)
@@ -38,6 +43,18 @@ class DoctorProfile : AppCompatActivity() {
         val longitude = intent.getDoubleExtra("longitude", 0.0)
         val latitude = intent.getDoubleExtra("latitude", 0.0)
 
+
+        val bookNowBtn = findViewById<Button>(R.id.booknowbtndocprof) // Replace with the actual ID of your button
+
+        bookNowBtn.setOnClickListener {
+            val intent = Intent(this, DoctorBooking::class.java) // Replace "Booking" with the actual name of your booking activity
+
+            // Pass the docNameEn value to the Booking activity
+            intent.putExtra("docNameEn", docNameEn)
+
+            // Start the Booking activity
+            startActivity(intent)
+        }
 
         val docNameEnTextView = findViewById<TextView>(R.id.docNamePtxt)
         val avatarImageView = findViewById<ImageView>(R.id.avatarP)
