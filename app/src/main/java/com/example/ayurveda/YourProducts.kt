@@ -30,7 +30,7 @@ class YourProducts : AppCompatActivity() {
         }
 
 
-// Initialize Firestore
+       // Initialize Firestore
         val db = FirebaseFirestore.getInstance()
 
         // Navbar
@@ -71,12 +71,6 @@ class YourProducts : AppCompatActivity() {
                 // Handle the failure to retrieve user data
                 Log.e("Firestore", "Error getting user document: $exception")
             }
-
-
-
-
-
-
 
 
 
