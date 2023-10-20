@@ -131,6 +131,8 @@ class PaymentGateway : AppCompatActivity() {
 
                                 appointmentsCollection.add(appointmentData)
                                     .addOnSuccessListener { documentReference ->
+
+                                        val productId = documentReference.id
                                         // Data added successfully, start PaymentSuccess activity with bookingDate
 
                                         val notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
@@ -158,7 +160,7 @@ class PaymentGateway : AppCompatActivity() {
                                         // Show the notification
                                         notificationManager.notify(notificationId, notificationBuilder.build())
                                         val intent = Intent(this, PaymentSuccess::class.java)
-                                        intent.putExtra("refno", ppNumberPayment)
+                                        intent.putExtra("refno", productId)
                                         startActivity(intent)
                                     }
                                     .addOnFailureListener { e ->

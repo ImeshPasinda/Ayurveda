@@ -93,7 +93,13 @@
             android:name=".UsersLogin"
             android:exported="false" />
         <activity
+            android:name=".ProductAddedStatus"
+            android:exported="false" />
+        <activity
             android:name=".ProductsView"
+            android:exported="false" />
+        <activity
+            android:name=".AddProduct"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

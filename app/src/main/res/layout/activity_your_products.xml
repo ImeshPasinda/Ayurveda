@@ -33,15 +33,14 @@
         app:srcCompat="@drawable/rectbg" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+        android:id="@+id/yourprodrecyclerView"
         android:layout_width="388dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/userName10"
-        app:layout_constraintVertical_bias="0.0"
         tools:listitem="@layout/list_item_your_products" />
 
     <TextView
@@ -77,6 +76,7 @@
         android:layout_marginTop="4dp"
         android:fontFamily="@font/inria_sans_regular"
         android:text="Store"
+        android:textColor="@color/primary_blue"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -140,7 +140,7 @@
         android:layout_height="30dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="112dp"
-        android:background="@drawable/appointment_blue"
+        android:background="@drawable/appointments_icon"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
@@ -150,7 +150,7 @@
         android:layout_height="30dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="112dp"
-        android:background="@drawable/store_icon"
+        android:background="@drawable/storeactive"
         app:layout_constraintStart_toEndOf="@+id/imageButton8"
         app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
@@ -195,7 +195,6 @@
         android:layout_marginTop="4dp"
         android:fontFamily="@font/inria_sans_regular"
         android:text="Appointments"
-        android:textColor="@color/primary_blue"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -216,7 +215,7 @@
         app:layout_constraintVertical_bias="0.768" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton2"
+        android:id="@+id/addprodfloatingbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"

@@ -49,11 +49,17 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation ("de.hdodenhof:circleimageview:3.1.0")
     implementation("com.android.car.ui:car-ui-lib:2.5.1")
-    implementation("com.google.firebase:firebase-firestore-ktx:24.7.1")
+    implementation("com.google.firebase:firebase-firestore-ktx:24.9.0")
     implementation ("com.squareup.picasso:picasso:2.71828")
-    implementation("com.google.android.gms:play-services-maps:18.1.0")
-    implementation("com.google.firebase:firebase-auth-ktx:22.1.2")
+    implementation("com.google.android.gms:play-services-maps:18.2.0")
+    implementation("com.google.firebase:firebase-auth-ktx:22.2.0")
+    implementation ("com.google.firebase:firebase-bom:32.4.0")
     implementation ("com.github.bumptech.glide:glide:4.12.0")
+    implementation ("com.google.firebase:firebase-storage:20.3.0")
+
+
+
+
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")

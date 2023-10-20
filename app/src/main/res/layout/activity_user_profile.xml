@@ -33,7 +33,7 @@
         app:srcCompat="@drawable/rectbg" />
 
     <Button
-        android:id="@+id/diagSavebtn2"
+        android:id="@+id/switchtosupplierbtn"
         android:layout_width="303dp"
         android:layout_height="57dp"
         android:layout_marginBottom="180dp"
@@ -64,7 +64,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.574"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/diagSavebtn2"
+        app:layout_constraintTop_toBottomOf="@+id/switchtosupplierbtn"
         app:layout_constraintVertical_bias="0.093" />
 
     <ImageView

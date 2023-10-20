@@ -13,7 +13,7 @@
         android:layout_height="81dp"
         android:layout_marginTop="26dp"
         android:fontFamily="@font/inria_sans_bold"
-        android:text="Product Name"
+        android:text="Success"
         android:textColor="@color/white"
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView10"
@@ -52,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/inria_sans_regular"
-        android:text="Product no: #"
+        android:text="Product no:"
         android:textColor="@color/primary_gray"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView8"
@@ -63,7 +63,7 @@
         app:layout_constraintVertical_bias="0.006" />
 
     <TextView
-        android:id="@+id/userName11"
+        android:id="@+id/proaddsuccessref"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"

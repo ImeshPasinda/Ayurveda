@@ -1,5 +1,6 @@
 package com.example.ayurveda
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -15,6 +16,7 @@ class UserProfile : AppCompatActivity() {
 
     // Initialize Firestore
     val db = Firebase.firestore
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_user_profile)
@@ -28,6 +30,12 @@ class UserProfile : AppCompatActivity() {
         val userNavButton = findViewById<ImageButton>(R.id.homenavbtn_1)
         userNavButton.setOnClickListener {
             val intent = Intent(this, Home::class.java)
+            startActivity(intent)
+        }
+
+        val supplierbtnButton = findViewById<Button>(R.id.switchtosupplierbtn)
+        supplierbtnButton.setOnClickListener {
+            val intent = Intent(this, YourProducts::class.java)
             startActivity(intent)
         }
 
