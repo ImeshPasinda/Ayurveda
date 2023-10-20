@@ -102,6 +102,18 @@
             android:name=".AddProduct"
             android:exported="false" />
         <activity
+            android:name=".DoctorRecommendation"
+            android:exported="false" />
+        <activity
+            android:name=".HerbRecommendation"
+            android:exported="false" />
+        <activity
+            android:name=".RemedyRecommendation"
+            android:exported="false" />
+        <activity
+            android:name=".Remedies"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustPan">
