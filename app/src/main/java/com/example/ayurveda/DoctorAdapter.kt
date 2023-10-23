@@ -10,8 +10,13 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 
-class DoctorAdapter(private val doctorsList: List<Doctor>) :
+class DoctorAdapter(private var doctorsList: List<Doctor>) :
     RecyclerView.Adapter<DoctorAdapter.ViewHolder>() {
+
+    fun submitList(newList: List<Doctor>) {
+        doctorsList = newList
+        notifyDataSetChanged()
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)

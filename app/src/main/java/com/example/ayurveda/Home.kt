@@ -10,6 +10,7 @@ import android.util.Log
 import android.view.View
 import android.view.animation.AnimationUtils
 import android.widget.ImageButton
+import android.widget.SearchView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -21,7 +22,8 @@ class Home : AppCompatActivity() {
 
     // Initialize Firestore
     val db = Firebase.firestore
-
+    private val doctorsList = mutableListOf<Doctor>()
+    private val adapter = DoctorAdapter(doctorsList)
 
 
     @SuppressLint("MissingInflatedId")
@@ -81,8 +83,22 @@ class Home : AppCompatActivity() {
             }
 
 
-        // Create a list to hold the data
-        val doctorsList = mutableListOf<Doctor>()
+        val searchView = findViewById<SearchView>(R.id.searchbydoctor)
+        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                return false
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                filterDoctors(newText)
+                return true
+            }
+        })
+
+        // Set up RecyclerView
+        val recyclerView = findViewById<RecyclerView>(R.id.recycleviewdoctors)
+        recyclerView.adapter = adapter // Set the adapter for the RecyclerView
+        recyclerView.layoutManager = LinearLayoutManager(this)
 
         val doctorsCollection = db.collection("doctors")
         doctorsCollection.get()
@@ -115,12 +131,8 @@ class Home : AppCompatActivity() {
                         doctorsList.add(doctor)
                     }
                 }
+                adapter.notifyDataSetChanged()
 
-                // Set up RecyclerView
-                val recyclerView = findViewById<RecyclerView>(R.id.recycleviewdoctors)
-                val adapter = DoctorAdapter(doctorsList)
-                recyclerView.adapter = adapter
-                recyclerView.layoutManager = LinearLayoutManager(this)
             }
             .addOnFailureListener { exception ->
                 // Handle the failure to retrieve data
@@ -128,6 +140,19 @@ class Home : AppCompatActivity() {
             }
 
 
+    }
+    private fun filterDoctors(query: String?) {
+        if (query.isNullOrBlank()) {
+            // If the query is blank, show all doctors
+            adapter.submitList(doctorsList)
+        } else {
+            // Filter doctors based on the query
+            val filteredDoctors = doctorsList.filter { doctor ->
+                doctor.docNameEn.contains(query, ignoreCase = true) ||
+                        doctor.docNameSn.contains(query, ignoreCase = true)
+            }
+            adapter.submitList(filteredDoctors)
+        }
     }
     // Override the onBackPressed() method to block the back button
     override fun onBackPressed() {

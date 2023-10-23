@@ -93,14 +93,14 @@ class PaymentGateway : AppCompatActivity() {
             // Define regular expressions for the expected formats
             val cvvPattern = Regex("^\\d{3}$")
             val cardNumberPattern = Regex("^\\d{16}$")
-            val expiryDatePattern = Regex("^\\d{5}$")
+            val expiryDatePattern = Regex("^(0[1-9]|1[0-2])/\\d{2}$")
 
             if (!cardNumberPattern.matches(cardNumber)) {
                 // Show an error message for invalid card number
                 Toast.makeText(this, "Invalid card number", Toast.LENGTH_SHORT).show()
             } else if (!expiryDatePattern.matches(expiryDate)) {
                 // Show an error message for invalid expiry date
-                Toast.makeText(this, "Invalid expiry date", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Invalid expiry date (use MM/YY format)", Toast.LENGTH_SHORT).show()
             } else if (!cvvPattern.matches(cvv)) {
                 // Show an error message for invalid CVV
                 Toast.makeText(this, "CVV must be 3 numbers", Toast.LENGTH_SHORT).show()
