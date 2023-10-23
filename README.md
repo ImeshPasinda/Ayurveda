@@ -68,10 +68,3 @@ The goal of user research is to identify and verify the requirements of users wi
 - **Gather feedback on product visibility enhancement.**
 - **Test overall effectiveness in boosting online sales.**
 
-## Getting Started
-
-To get started with our Ayurveda Medicine and Doctor Finder app, follow these simple steps:
-
-1. **Clone the repository:**
-   ```shell
-   git clone https://github.com/ImeshPasinda/ayurveda.git
