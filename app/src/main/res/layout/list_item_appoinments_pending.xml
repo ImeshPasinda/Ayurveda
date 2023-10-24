@@ -27,25 +27,23 @@
         android:id="@+id/pNamepending"
         android:layout_width="263dp"
         android:layout_height="26dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="38dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/inria_sans_bold"
         android:text="patientName"
         android:textColor="@color/primary_gray"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.304"
-        app:layout_constraintStart_toEndOf="@+id/avatarP"
+        app:layout_constraintStart_toEndOf="@+id/imageView17"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
-
 
 
     <TextView
         android:id="@+id/pDatepending"
         android:layout_width="263dp"
         android:layout_height="26dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="38dp"
         android:layout_marginTop="36dp"
         android:fontFamily="@font/inria_sans_regular"
         android:text="date"
@@ -53,8 +51,7 @@
         android:textSize="14sp"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.304"
-        app:layout_constraintStart_toEndOf="@+id/avatarP"
+        app:layout_constraintStart_toEndOf="@+id/imageView17"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed"
         tools:ignore="TextContrastCheck" />
@@ -63,7 +60,7 @@
         android:id="@+id/pTimepending"
         android:layout_width="263dp"
         android:layout_height="26dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="38dp"
         android:layout_marginTop="60dp"
         android:fontFamily="@font/inria_sans_regular"
         android:text="Time"
@@ -71,21 +68,18 @@
         android:textSize="14sp"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.304"
-        app:layout_constraintStart_toEndOf="@+id/avatarP"
+        app:layout_constraintStart_toEndOf="@+id/imageView17"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed"
         tools:ignore="TextContrastCheck" />
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/avatarP"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:src="@drawable/appointments_icon"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="91dp"
+        android:layout_height="91dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:srcCompat="@drawable/docappointment"
+        tools:layout_editor_absoluteY="0dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

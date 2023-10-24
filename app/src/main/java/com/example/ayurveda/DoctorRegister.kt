@@ -1,4 +1,5 @@
 package com.example.ayurveda
+import android.annotation.SuppressLint
 import com.google.firebase.firestore.FirebaseFirestore
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -12,10 +13,29 @@ import android.widget.Toast
 class DoctorRegister : AppCompatActivity() {
     private val db = FirebaseFirestore.getInstance()
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_doctor_register)
 
+
+        val signInButton = findViewById<ImageButton>(R.id.docsigninbtn)
+
+        // Set an OnClickListener for the "Sign In" button
+        signInButton.setOnClickListener {
+            // Navigate to the DoctorLogin activity
+            val intent = Intent(this, DoctorLogin::class.java)
+            startActivity(intent)
+        }
+
+        val UsersignUpButton = findViewById<ImageButton>(R.id.userregbtnback)
+
+        // Set an OnClickListener for the "Sign In" button
+        UsersignUpButton.setOnClickListener {
+            // Navigate to the DoctorLogin activity
+            val intent = Intent(this, UsersRegister::class.java)
+            startActivity(intent)
+        }
 
         val unameEditText = findViewById<EditText>(R.id.uname)
         val urepasswordEditText = findViewById<EditText>(R.id.urepassword)
@@ -34,14 +54,7 @@ class DoctorRegister : AppCompatActivity() {
 
 
 
-//            val signInButton = findViewById<ImageButton>(R.id.signinbtndoc)
-//
-//            // Set an OnClickListener for the "Sign In" button
-//            signInButton.setOnClickListener {
-//                // Navigate to the DoctorLogin activity
-//                val intent = Intent(this, DoctorProfileOwn::class.java)
-//                startActivity(intent)
-//            }
+
             // First, check if the email already exists in Firestore
             db.collection("doctors")
                 .whereEqualTo("email", email)

@@ -24,25 +24,15 @@ class DoctorLogin : AppCompatActivity() {
 
         sessionManager = SessionManager(this)
 
-//        if (sessionManager.isUserLoggedIn()) {
-//            // User is already logged in, go to Home activity
-//            val intent = Intent(this, DoctorProfileOwn::class.java)
-//            startActivity(intent)
-//            finish() // Close the main activity
-//        } else {
-//            // User is not logged in, go to the login screen
-//            val intent = Intent(this, DoctorLogin::class.java)
-//            startActivity(intent)
-//            finish()
-//        }
+
 
         val btnDoctorLogin = findViewById<Button>(R.id.userlogoutbtn)
-//        val btnDoctorSignUp = findViewById<ImageButton>(R.id.signupbtn)
+        val btnDoctorSignUp = findViewById<ImageButton>(R.id.docsignupbtn)
 
-//        btnDoctorSignUp.setOnClickListener {
-//            val intent = Intent(this, DoctorRegister::class.java)
-//            startActivity(intent)
-//        }
+        btnDoctorSignUp.setOnClickListener {
+            val intent = Intent(this, DoctorRegister::class.java)
+            startActivity(intent)
+        }
         btnDoctorLogin.setOnClickListener {
             val email = findViewById<EditText>(R.id.ulemail).text.toString()
             val password = findViewById<EditText>(R.id.ulpassword).text.toString()

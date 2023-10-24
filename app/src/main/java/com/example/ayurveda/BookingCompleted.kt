@@ -4,16 +4,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.TextView
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.ktx.Firebase
+import com.google.firebase.firestore.FirebaseFirestore
 
-class DoctorRemedyAddSuccess : AppCompatActivity() {
+class BookingCompleted : AppCompatActivity() {
 
-    // Initialize Firestore
-    val db = Firebase.firestore
+    private val db = FirebaseFirestore.getInstance()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_doctor_remedy_add_success)
+        setContentView(R.layout.activity_booking_completed)
 
         val sessionManager = SessionManager(this)
         val userEmail = sessionManager.getUserEmail()
@@ -45,6 +43,5 @@ class DoctorRemedyAddSuccess : AppCompatActivity() {
                 // Handle the failure to retrieve user data
                 Log.e("Firestore", "Error getting user document: $exception")
             }
-
     }
 }

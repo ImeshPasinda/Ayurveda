@@ -27,16 +27,40 @@ class DoctorProfileOwn : AppCompatActivity() {
             val intent = Intent(this, ViewAppoinments::class.java)
             startActivity(intent)
         }
-        val doctorNavButton = findViewById<ImageButton>(R.id.homenavbtn_1)
-        doctorNavButton.setOnClickListener {
-            val intent = Intent(this, Home::class.java)
-            startActivity(intent)
-        }
+
         val doctorRemButton = findViewById<ImageButton>(R.id.imageButton11)
         doctorRemButton.setOnClickListener {
             val intent = Intent(this,AddDoctorRemedy::class.java)
             startActivity(intent)
         }
+
+        // Retrieve the username from the "users" collection
+        val usersCollection = db.collection("doctors")
+        usersCollection.whereEqualTo("email", userEmail)
+            .get()
+            .addOnSuccessListener { userQuerySnapshot ->
+                if (!userQuerySnapshot.isEmpty) {
+                    // There may be multiple documents matching the email; loop through them if needed
+                    for (userDocument in userQuerySnapshot.documents) {
+                        val username = userDocument.getString("docNameEn")
+
+                        // Now you have the username, and you can use it as needed
+                        // For example, you can set it in a TextView
+                        val usernameTextView = findViewById<TextView>(R.id.unamenavbar)
+                        usernameTextView.text = "Dr. " + (username?.split(" ")?.get(0) ?: "Doctor")
+
+                        // If you found the username you were looking for, you can break out of the loop
+                        break
+                    }
+                } else {
+                    // Handle the case when no document with the matching email is found
+                    Log.d("Firestore", "No user document found for email: $userEmail")
+                }
+            }
+            .addOnFailureListener { exception ->
+                // Handle the failure to retrieve user data
+                Log.e("Firestore", "Error getting user document: $exception")
+            }
 
         // Retrieve the doctor's details from the "doctors" collection
         val doctorsCollection = db.collection("doctors")
@@ -93,5 +117,9 @@ class DoctorProfileOwn : AppCompatActivity() {
         // Clear the back stack so that the user cannot navigate back to DoctorProfileOwn
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
         startActivity(intent)
+    }
+    // Override the onBackPressed() method to block the back button
+    override fun onBackPressed() {
+        // Leave this method empty to block the back button
     }
 }

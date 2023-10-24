@@ -64,6 +64,7 @@
         android:id="@+id/completedbookingrecyclerView"
         android:layout_width="379dp"
         android:layout_height="298dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView13"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

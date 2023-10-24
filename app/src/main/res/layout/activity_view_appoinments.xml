@@ -9,29 +9,28 @@
 
     <ImageButton
         android:id="@+id/imageButton45"
-        android:layout_width="22dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="32dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="36dp"
         android:background="@drawable/leftarrowwhite"
         app:layout_constraintBottom_toTopOf="@+id/imageView10"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.487" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/appPtxt"
         android:layout_width="225dp"
         android:layout_height="60dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="36dp"
         android:fontFamily="@font/inria_sans_bold"
         android:text="Appoinments"
         android:textColor="@color/white"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView10"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -45,27 +44,14 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycleviewpendingapp"
-        android:layout_width="366dp"
-        android:layout_height="122dp"
+        android:layout_width="375dp"
+        android:layout_height="584dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.443"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
         tools:listitem="@layout/list_item_appoinments_pending" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycleviewCompletedapp"
-        android:layout_width="366dp"
-        android:layout_height="228dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.832"
-        tools:listitem="@layout/list_item_appoinment_complete" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -103,7 +89,6 @@
         android:layout_marginBottom="4dp"
         android:fontFamily="@font/inria_sans_regular"
         android:text="Home"
-        android:textColor="@color/primary_blue"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -156,23 +141,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.34" />
-
-    <TextView
-        android:id="@+id/textViewcomplete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/inria_sans_bold"
-        android:text="Completed"
-        android:textColor="@color/primary_gray"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.121"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.587" />
+        app:layout_constraintTop_toTopOf="@+id/imageView10"
+        app:layout_constraintVertical_bias="0.146" />
 
     <ImageButton
         android:id="@+id/imageButton8"

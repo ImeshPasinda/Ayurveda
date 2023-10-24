@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,57 +15,60 @@
         android:theme="@style/Theme.Ayurveda"
         tools:targetApi="31">
         <activity
+            android:name=".BookingCompleted"
+            android:exported="false" />
+        <activity
             android:name=".StoreCart"
             android:exported="false" />
-         <activity
-         android:name=".StorePaymentSuccess"
-         android:exported="false" />
         <activity
-         android:name=".StoreHome"
-         android:exported="false"
-         android:windowSoftInputMode="adjustPan"/>
+            android:name=".StorePaymentSuccess"
+            android:exported="false" />
+        <activity
+            android:name=".StoreHome"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".YourProducts"
             android:exported="false" />
-         <activity
-         android:name=".UserAppointments"
-         android:exported="false" />
-         <activity
-         android:name=".DoctorBooking"
-         android:exported="false" />
-         <activity
-         android:name=".StorePaymentGateway"
-         android:exported="false" />
-         <activity
-         android:name=".StorePayment"
-         android:exported="false" />
-         <activity
-         android:name=".PaymentSuccess"
-         android:exported="false" />
-       <activity
-        android:name=".PaymentGateway"
-         android:exported="false" />
         <activity
-        android:name=".DoctorPayment"
-        android:exported="false" />
-         <activity
-         android:name=".EditDiagnosisForm"
-         android:exported="false" />
-         <activity
-         android:name=".DoctorDiagnosisForm"
-         android:exported="false" />
-         <activity
-         android:name=".DocProfilenDashboard"
-         android:exported="false" />
+            android:name=".UserAppointments"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorBooking"
+            android:exported="false" />
+        <activity
+            android:name=".StorePaymentGateway"
+            android:exported="false" />
+        <activity
+            android:name=".StorePayment"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentSuccess"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentGateway"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorPayment"
+            android:exported="false" />
+        <activity
+            android:name=".EditDiagnosisForm"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorDiagnosisForm"
+            android:exported="false" />
+        <activity
+            android:name=".DocProfilenDashboard"
+            android:exported="false" />
         <activity
             android:name=".WelcomeDoctor"
             android:exported="false" />
+        <activity
+            android:name=".DoctorRegister"
+            android:exported="false" />
          <activity
-         android:name=".DoctorRegister"
+         android:name=".DoctorLogin"
          android:exported="false" />
-<!--         <activity-->
-<!--         android:name=".DoctorLogin"-->
-<!--         android:exported="false" />-->
         <activity
             android:name=".UserProfile"
             android:exported="false" />
@@ -136,7 +140,7 @@
             android:name=".ViewAppoinmentsDetails"
             android:exported="false" />
         <activity
-            android:name=".DoctorLogin"
+            android:name=".MainActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>

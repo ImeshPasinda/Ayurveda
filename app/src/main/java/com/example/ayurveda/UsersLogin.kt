@@ -56,5 +56,12 @@ class UsersLogin : AppCompatActivity() {
             val intent = Intent(this, UsersRegister::class.java)
             startActivity(intent)
         }
+
+        val SwicthDoctorPortal = findViewById<ImageButton>(R.id.switchtoDoctorbtn)
+
+        SwicthDoctorPortal.setOnClickListener {
+            val intent = Intent(this, DoctorLogin::class.java)
+            startActivity(intent)
+        }
     }
 }
