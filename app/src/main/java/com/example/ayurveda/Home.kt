@@ -36,6 +36,8 @@ class Home : AppCompatActivity() {
 
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
+
+        //Navbar
         //Profile
         val userNavButton = findViewById<ImageButton>(R.id.userProfileNavbtn)
         userNavButton.setOnClickListener {
