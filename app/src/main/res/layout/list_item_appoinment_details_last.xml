@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <ImageButton
+        android:id="@+id/deletebtnAppoinments"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="8dp"
+        android:alpha="0.5"
+        android:background="@drawable/historykimuthu"
+        android:contentDescription="TODO"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.978"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+    <TextView
+        android:id="@+id/bookdate"
+        android:layout_width="263dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:alpha="0.5 "
+        android:fontFamily="@font/inria_sans_regular"
+        android:text="date"
+        android:textColor="@color/primary_gray"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintStart_toEndOf="@+id/avatarP"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/booktime"
+        android:layout_width="263dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:alpha="0.5"
+        android:fontFamily="@font/inria_sans_regular"
+        android:text="Time"
+        android:textColor="@color/primary_gray"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintStart_toEndOf="@+id/avatarP"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:ignore="TextContrastCheck" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatarP"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:alpha="0.5"
+        android:src="@drawable/appointments_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

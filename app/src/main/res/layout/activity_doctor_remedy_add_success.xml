@@ -5,22 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primary_blue"
-    tools:context=".DoctorDiagnosisForm">
+    tools:context=".DoctorRemedyAddSuccess">
 
     <TextView
-        android:id="@+id/docNamePtxt"
+        android:id="@+id/bookingNo"
         android:layout_width="278dp"
-        android:layout_height="55dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="92dp"
         android:fontFamily="@font/inria_sans_bold"
-        android:text="Appointments"
+        android:text="Remedy"
         android:textColor="@color/white"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView10"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.237"
+        app:layout_constraintHorizontal_bias="0.162"
         app:layout_constraintStart_toEndOf="@+id/imageButton45"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.879" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -188,128 +187,30 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.768" />
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/avatarP"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="228dp"
-        android:src="@drawable/doctoravatar"
+    <ImageButton
+        android:id="@+id/imageButton14"
+        android:layout_width="83dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="284dp"
+        android:background="@drawable/tick"
+        android:scaleType="centerInside"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/imageView10" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="U.name"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/avatarP" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="18dp"
         android:fontFamily="@font/inria_sans_regular"
-        android:text="Diagnosis"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
-
-    <EditText
-        android:id="@+id/cardno"
-        android:layout_width="303dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/custom_input"
-        android:ems="10"
-        android:fontFamily="@font/inria_sans_regular"
-        android:hint="Symptoms"
-        android:inputType="textEmailAddress"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:textColor="@color/material_dynamic_neutral50"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
-
-    <EditText
-        android:id="@+id/medication"
-        android:layout_width="303dp"
-        android:layout_height="57dp"
-        android:background="@drawable/custom_input"
-        android:ems="10"
-        android:fontFamily="@font/inria_sans_regular"
-        android:hint="Medication"
-        android:inputType="text"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:textColor="@color/material_dynamic_neutral50"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardno"
-        app:layout_constraintVertical_bias="0.065" />
-
-    <EditText
-        android:id="@+id/notes"
-        android:layout_width="303dp"
-        android:layout_height="57dp"
-        android:background="@drawable/custom_input"
-        android:ems="10"
-        android:fontFamily="@font/inria_sans_regular"
-        android:hint="Notes"
-        android:inputType="text"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:textColor="@color/material_dynamic_neutral50"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/medication"
-        app:layout_constraintVertical_bias="0.092" />
-
-    <Button
-        android:id="@+id/diagSavebtn"
-        android:layout_width="134dp"
-        android:layout_height="48dp"
-        android:background="@drawable/btn_blue_background"
-        android:fontFamily="@font/inria_sans_regular"
-        android:text="Save"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
+        android:text="Remedy Added Successfully !"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/notes"
-        app:layout_constraintVertical_bias="0.185" />
-
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/inria_sans_regular"
-
-        android:text="date"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.193"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/docNamePtxt" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton14"
+        app:layout_constraintVertical_bias="0.033" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

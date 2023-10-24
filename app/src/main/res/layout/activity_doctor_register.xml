@@ -5,22 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-
     tools:context=".DoctorRegister">
-
-    <ImageButton
-        android:id="@+id/signinbtn"
-        android:layout_width="48dp"
-        android:layout_height="16dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginBottom="56dp"
-        android:background="@drawable/signinbtn"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -55,7 +40,7 @@
         android:id="@+id/urepassword"
         android:layout_width="303dp"
         android:layout_height="57dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="70dp"
         android:background="@drawable/custom_input"
         android:ems="10"
         android:fontFamily="@font/inria_sans_regular"
@@ -78,7 +63,7 @@
         android:ems="10"
         android:fontFamily="@font/inria_sans_regular"
         android:hint="SLMC Reg No"
-        android:inputType="textPassword"
+        android:inputType="text"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
         android:textColor="@color/material_dynamic_neutral50"
@@ -95,7 +80,7 @@
         android:ems="10"
         android:fontFamily="@font/inria_sans_regular"
         android:hint="Specialization"
-        android:inputType="textPassword"
+        android:inputType="text"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
         android:textColor="@color/material_dynamic_neutral50"
@@ -108,15 +93,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="56dp"
+        android:layout_marginBottom="32dp"
         android:fontFamily="@font/inria_sans_regular"
         android:text="Already have an account?"
         android:textColor="@color/primary_blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView5"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/signinbtndoc"
+        android:layout_width="48dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/doctorsigninbtnkimuthu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.962" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -152,12 +150,13 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="60dp"
         android:fontFamily="@font/inria_sans_regular"
-        android:text="Register as a Doctor"
+        android:text="Register as a User"
         android:textColor="@color/primary_blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText

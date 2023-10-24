@@ -5,22 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primary_blue"
-    tools:context=".DoctorDiagnosisForm">
+    tools:context=".DoctorProfileOwn">
 
     <TextView
-        android:id="@+id/docNamePtxt"
+        android:id="@+id/docNameProf"
         android:layout_width="278dp"
-        android:layout_height="55dp"
+        android:layout_height="95dp"
         android:fontFamily="@font/inria_sans_bold"
-        android:text="Appointments"
+        android:text="Doc.Name"
         android:textColor="@color/white"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView10"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.237"
-        app:layout_constraintStart_toEndOf="@+id/imageButton45"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toEndOf="@+id/backtoHomebtn"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.879" />
+        app:layout_constraintVertical_bias="0.133" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -38,10 +38,10 @@
         android:layout_marginBottom="-55dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.967"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/navcard"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="17dp" />
+        tools:layout_editor_absoluteX="0dp" />
 
     <TextView
         android:id="@+id/textView11"
@@ -73,7 +73,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton10"
+        app:layout_constraintTop_toBottomOf="@+id/homenavbtn_1"
         app:layout_constraintVertical_bias="0.333" />
 
     <TextView
@@ -129,7 +129,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
     <ImageButton
-        android:id="@+id/imageButton10"
+        android:id="@+id/homenavbtn_1"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="48dp"
@@ -157,7 +157,7 @@
         android:layout_height="30dp"
         android:layout_marginTop="112dp"
         android:layout_marginEnd="24dp"
-        android:background="@drawable/user_profile_icon"
+        android:background="@drawable/user_profile_icon_active"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
@@ -165,7 +165,7 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="-2dp"
+        android:layout_marginStart="-3dp"
         android:layout_marginTop="4dp"
         android:fontFamily="@font/inria_sans_regular"
         android:text="Appointments"
@@ -178,7 +178,7 @@
         app:layout_constraintVertical_bias="0.272" />
 
     <ImageButton
-        android:id="@+id/imageButton45"
+        android:id="@+id/backtoHomebtn"
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_marginStart="28dp"
@@ -188,128 +188,159 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.768" />
 
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="375dp"
+        android:layout_height="237dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView10"
+        app:layout_constraintVertical_bias="0.139"
+        app:srcCompat="@drawable/banner_dp" />
+
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/avatarP"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_marginTop="228dp"
         android:src="@drawable/doctoravatar"
+        app:layout_constraintBottom_toTopOf="@+id/docRegNo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.829" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="U.name"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/avatarP" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
         android:fontFamily="@font/inria_sans_regular"
-        android:text="Diagnosis"
-        android:textColor="@color/black"
+        android:text="Banner"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+        app:layout_constraintTop_toTopOf="@+id/imageView10"
+        app:layout_constraintVertical_bias="0.23" />
 
-    <EditText
-        android:id="@+id/cardno"
-        android:layout_width="303dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/custom_input"
-        android:ems="10"
+    <TextView
+        android:id="@+id/docRegNo"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
         android:fontFamily="@font/inria_sans_regular"
-        android:hint="Symptoms"
-        android:inputType="textEmailAddress"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:textColor="@color/material_dynamic_neutral50"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
-
-    <EditText
-        android:id="@+id/medication"
-        android:layout_width="303dp"
-        android:layout_height="57dp"
-        android:background="@drawable/custom_input"
-        android:ems="10"
-        android:fontFamily="@font/inria_sans_regular"
-        android:hint="Medication"
-        android:inputType="text"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:textColor="@color/material_dynamic_neutral50"
+        android:text="Doc.RegNo"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardno"
-        app:layout_constraintVertical_bias="0.065" />
+        app:layout_constraintHorizontal_bias="0.613"
+        app:layout_constraintStart_toEndOf="@+id/imageView31"
+        app:layout_constraintTop_toBottomOf="@+id/docQual"
+        app:layout_constraintVertical_bias="0.076" />
 
-    <EditText
-        android:id="@+id/notes"
-        android:layout_width="303dp"
-        android:layout_height="57dp"
-        android:background="@drawable/custom_input"
-        android:ems="10"
+    <TextView
+        android:id="@+id/docQual"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/inria_sans_regular"
-        android:hint="Notes"
-        android:inputType="text"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:textColor="@color/material_dynamic_neutral50"
+        android:text="Doc.Qualifications"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintHorizontal_bias="0.613"
+        app:layout_constraintStart_toEndOf="@+id/imageView30"
+        app:layout_constraintTop_toBottomOf="@+id/imageView28"
+        app:layout_constraintVertical_bias="0.146" />
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="60dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/medication"
-        app:layout_constraintVertical_bias="0.092" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView28"
+        app:srcCompat="@drawable/graduate_icon" />
+
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView30"
+        app:srcCompat="@drawable/license_icon" />
+
+    <ImageView
+        android:id="@+id/imageView32"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView31"
+        app:srcCompat="@drawable/phone_icon" />
+
+    <TextView
+        android:id="@+id/docAddr"
+        android:layout_width="290dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="18dp"
+        android:fontFamily="@font/inria_sans_regular"
+        android:text="Doc.Address"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintStart_toEndOf="@+id/imageView33"
+        app:layout_constraintTop_toBottomOf="@+id/docPhone"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView32"
+        app:srcCompat="@drawable/location_icon" />
+
+    <TextView
+        android:id="@+id/docPhone"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/inria_sans_regular"
+        android:text="Doc.PhoneNo"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.613"
+        app:layout_constraintStart_toEndOf="@+id/imageView32"
+        app:layout_constraintTop_toBottomOf="@+id/docRegNo"
+        app:layout_constraintVertical_bias="0.072" />
 
     <Button
-        android:id="@+id/diagSavebtn"
+        android:id="@+id/doclogoutbtn"
         android:layout_width="134dp"
         android:layout_height="48dp"
         android:background="@drawable/btn_blue_background"
         android:fontFamily="@font/inria_sans_regular"
-        android:text="Save"
+        android:text="LogOut"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/notes"
-        app:layout_constraintVertical_bias="0.185" />
-
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/inria_sans_regular"
-
-        android:text="date"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.193"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/docNamePtxt" />
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.834" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -62,9 +62,9 @@
          <activity
          android:name=".DoctorRegister"
          android:exported="false" />
-         <activity
-         android:name=".DoctorLogin"
-         android:exported="false" />
+<!--         <activity-->
+<!--         android:name=".DoctorLogin"-->
+<!--         android:exported="false" />-->
         <activity
             android:name=".UserProfile"
             android:exported="false" />
@@ -115,7 +115,28 @@
             android:name=".Remedies"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".AddDoctorRemedy"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorOtherDetails"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorProfileOwn"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorRemedyAddSuccess"
+            android:exported="false" />
+        <activity
+            android:name=".SaveDiagnosisForm"
+            android:exported="false" />
+        <activity
+            android:name=".ViewAppoinments"
+            android:exported="false" />
+        <activity
+            android:name=".ViewAppoinmentsDetails"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorLogin"
             android:exported="true"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".DoctorOtherDetails">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="103dp"
+        android:layout_height="91dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.069"
+        app:srcCompat="@drawable/ayurveda_blue_logo" />
+
+    <EditText
+        android:id="@+id/addressdoc"
+        android:layout_width="303dp"
+        android:layout_height="57dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:fontFamily="@font/inria_sans_regular"
+        android:hint="address"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/material_dynamic_neutral50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.253" />
+
+    <EditText
+        android:id="@+id/nameSindoc"
+        android:layout_width="303dp"
+        android:layout_height="57dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:fontFamily="@font/inria_sans_regular"
+        android:hint="Name In Sinhala"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/material_dynamic_neutral50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.369" />
+
+    <EditText
+        android:id="@+id/phonedoc"
+        android:layout_width="303dp"
+        android:layout_height="57dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:fontFamily="@font/inria_sans_regular"
+        android:hint="Phone No"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/material_dynamic_neutral50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.477" />
+
+    <EditText
+        android:id="@+id/latdoc"
+        android:layout_width="303dp"
+        android:layout_height="57dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:fontFamily="@font/inria_sans_regular"
+        android:hint="Latitude"
+        android:inputType="numberDecimal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/material_dynamic_neutral50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.587" />
+
+    <EditText
+        android:id="@+id/londoc"
+        android:layout_width="303dp"
+        android:layout_height="57dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:fontFamily="@font/inria_sans_regular"
+        android:hint="Longitude"
+        android:inputType="numberDecimal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/material_dynamic_neutral50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.701" />
+
+
+    <Button
+        android:id="@+id/usersavebtn"
+        android:layout_width="134dp"
+        android:layout_height="48dp"
+        android:background="@drawable/btn_blue_background"
+        android:fontFamily="@font/inria_sans_regular"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.935" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
