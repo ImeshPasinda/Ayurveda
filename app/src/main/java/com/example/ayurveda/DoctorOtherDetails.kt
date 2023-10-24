@@ -3,8 +3,10 @@ package com.example.ayurveda
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Spinner
 import com.google.firebase.firestore.FirebaseFirestore
 import android.widget.Toast
 import com.google.firebase.firestore.SetOptions
@@ -26,11 +28,19 @@ class DoctorOtherDetails : AppCompatActivity() {
         val sessionManager = SessionManager(this)
         val userEmail = sessionManager.getUserEmail()
 
+        // Inside your onCreate method
+        val categoryDoctorSpinner = findViewById<Spinner>(R.id.doccategory)
+        val categories = arrayOf("Sneezing", "Headache", "Cough", "Fever")
+
+        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, categories)
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        categoryDoctorSpinner.adapter = adapter
+
 
         saveButton.setOnClickListener {
             val db = FirebaseFirestore.getInstance()
 
-            val intent = Intent(this, DoctorProfileOwn::class.java)
+            val intent = Intent(this, WelcomeDoctor::class.java)
             startActivity(intent)
 
             db.collection("doctors")
@@ -48,6 +58,7 @@ class DoctorOtherDetails : AppCompatActivity() {
                         val phoneNo = phonedocEditText.text.toString()
                         val latitudeText = latdocEditText.text.toString()
                         val longitudeText = londocEditText.text.toString()
+                        val selectedCategory = categoryDoctorSpinner.selectedItem.toString()
 
                         if (address.isEmpty() || nameInSinhala.isEmpty() || phoneNo.isEmpty() || latitudeText.isEmpty() || longitudeText.isEmpty()) {
                             showToast("Please fill in all fields.")
@@ -61,7 +72,8 @@ class DoctorOtherDetails : AppCompatActivity() {
                                     "docNameSn" to nameInSinhala,
                                     "docPhoneNo" to phoneNo,
                                     "latitude" to latitude,
-                                    "longitude" to longitude
+                                    "longitude" to longitude,
+                                    "category" to selectedCategory
                                 )
 
                                 db.collection("doctors")

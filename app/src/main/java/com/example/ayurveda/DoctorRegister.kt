@@ -78,7 +78,8 @@ class DoctorRegister : AppCompatActivity() {
                                 "docNameSn" to null,
                                 "docPhoneNo" to null,
                                 "latitude" to null,
-                                "longitude" to null
+                                "longitude" to null,
+                                "category" to null,
                             )
 
                             db.collection("doctors")
@@ -91,7 +92,7 @@ class DoctorRegister : AppCompatActivity() {
                                     showToast("Registration successful!")
 
                                     // Navigate to the WelcomeDoctor activity
-                                    val intent = Intent(this, WelcomeDoctor::class.java)
+                                    val intent = Intent(this, DoctorOtherDetails::class.java)
                                     startActivity(intent)
 
                                     val sessionManager = SessionManager(this)

@@ -45,7 +45,7 @@ class WelcomeDoctor : AppCompatActivity() {
 
        val btnLetsGo = findViewById<ImageButton>(R.id.letsgobtn)
         btnLetsGo.setOnClickListener {
-           val intent = Intent(this, DoctorOtherDetails::class.java)
+           val intent = Intent(this, DoctorProfileOwn::class.java)
             startActivity(intent)
         }
     }

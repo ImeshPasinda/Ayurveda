@@ -19,6 +19,7 @@
         app:layout_constraintVertical_bias="0.069"
         app:srcCompat="@drawable/ayurveda_blue_logo" />
 
+
     <EditText
         android:id="@+id/addressdoc"
         android:layout_width="303dp"
@@ -26,7 +27,7 @@
         android:background="@drawable/custom_input"
         android:ems="10"
         android:fontFamily="@font/inria_sans_regular"
-        android:hint="address"
+        android:hint="Address"
         android:inputType="text"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
@@ -35,7 +36,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.253" />
+        app:layout_constraintVertical_bias="0.247" />
 
     <EditText
         android:id="@+id/nameSindoc"
@@ -53,7 +54,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.369" />
+        app:layout_constraintVertical_bias="0.334" />
+
+    <Spinner
+        android:id="@+id/doccategory"
+        android:layout_width="303dp"
+        android:layout_height="57dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:fontFamily="@font/inria_sans_regular"
+        android:hint="Category"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/material_dynamic_neutral50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.512" />
 
     <EditText
         android:id="@+id/phonedoc"
@@ -71,7 +90,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.477" />
+        app:layout_constraintVertical_bias="0.422" />
 
     <EditText
         android:id="@+id/latdoc"
@@ -89,7 +108,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.587" />
+        app:layout_constraintVertical_bias="0.604" />
 
     <EditText
         android:id="@+id/londoc"
@@ -107,8 +126,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.701" />
-
+        app:layout_constraintVertical_bias="0.693" />
 
     <Button
         android:id="@+id/usersavebtn"
@@ -125,6 +143,6 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.935" />
+        app:layout_constraintVertical_bias="0.834" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

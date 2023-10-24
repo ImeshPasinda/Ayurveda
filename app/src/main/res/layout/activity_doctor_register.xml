@@ -30,7 +30,7 @@
         android:inputType="text"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
-        android:textColor="@color/material_dynamic_neutral50"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
@@ -47,7 +47,7 @@
         android:inputType="textPassword"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
-        android:textColor="@color/material_dynamic_neutral50"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/userregisterbtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,7 +65,7 @@
         android:inputType="text"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
-        android:textColor="@color/material_dynamic_neutral50"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/uemail" />
@@ -82,7 +82,7 @@
         android:inputType="text"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
-        android:textColor="@color/material_dynamic_neutral50"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/slmcreg" />
@@ -188,7 +188,7 @@
         android:inputType="textPassword"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
-        android:textColor="@color/material_dynamic_neutral50"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/specialization" />
@@ -205,7 +205,7 @@
         android:inputType="textEmailAddress"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
-        android:textColor="@color/material_dynamic_neutral50"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/uname" />
