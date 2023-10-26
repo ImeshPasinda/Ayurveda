@@ -19,7 +19,7 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.593"
+        app:layout_constraintHorizontal_bias="0.451"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
@@ -28,14 +28,14 @@
         android:id="@+id/doctorbackbtn"
         android:layout_width="25dp"
         android:layout_height="25dp"
-        android:background="@drawable/leftarrowwhite"
         android:layout_marginTop="40dp"
+        android:background="@drawable/leftarrowwhite"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -49,52 +49,33 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycleviewdoctors"
         android:layout_width="386dp"
-        android:layout_height="306dp"
+        android:layout_height="350dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView13"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.856"
+        app:layout_constraintVertical_bias="0.876"
         tools:listitem="@layout/list_item_doctors" />
 
     <SearchView
         android:id="@+id/searchViewDoctor"
         android:layout_width="363dp"
         android:layout_height="54dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
         android:background="@drawable/search_input"
         android:imeOptions="flagNoExtractUi|flagNoFullscreen"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:queryBackground="@drawable/bg_searchview_query"
         android:queryHint="Search"
         android:searchHintIcon="@drawable/baseline_search"
         android:searchIcon="@drawable/baseline_search"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView10"
-        app:layout_constraintVertical_bias="0.137"
-        android:queryBackground="@drawable/bg_searchview_query">
-
-        <TextView
-            android:id="@+id/sectiontxt1"
-            android:layout_width="330dp"
-            android:layout_height="94dp"
-            android:fontFamily="@font/inria_sans_bold"
-            android:text="Personalized Remedies"
-            android:textColor="@color/white"
-            android:textSize="34sp" />
-
-        <TextView
-            android:id="@+id/sectiontxt"
-            android:layout_width="278dp"
-            android:layout_height="95dp"
-            android:layout_marginTop="16dp"
-            android:fontFamily="@font/inria_sans_bold"
-            android:text="Personalized remedies"
-            android:textColor="@color/white"
-            android:textSize="34sp" />
-    </SearchView>
+        app:layout_constraintVertical_bias="0.137"/>
 
     <!--    <ImageView-->
     <!--        android:id="@+id/imageView11"-->
@@ -152,11 +133,12 @@
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="388dp"
-        android:layout_height="231dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="-55dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
@@ -187,7 +169,6 @@
         android:layout_marginBottom="4dp"
         android:fontFamily="@font/inria_sans_regular"
         android:text="Home"
-        android:textColor="@color/primary_blue"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -203,6 +184,7 @@
         android:layout_marginStart="20dp"
         android:fontFamily="@font/inria_sans_regular"
         android:text="Remedies"
+        android:textColor="@color/primary_blue"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -328,13 +310,14 @@
         android:id="@+id/imageButton4"
         android:layout_width="57dp"
         android:layout_height="25dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/seeallbtn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.322" />
+        app:layout_constraintVertical_bias="0.32" />
 
     <ImageButton
         android:id="@+id/imageButton7"
@@ -344,7 +327,7 @@
         android:background="@drawable/seeallbtn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.968"
+        app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.348" />

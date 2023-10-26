@@ -9,8 +9,8 @@
 
     <TextView
         android:id="@+id/docNamePtxt"
-        android:layout_width="294dp"
-        android:layout_height="96dp"
+        android:layout_width="278dp"
+        android:layout_height="95dp"
         android:layout_marginTop="30dp"
         android:fontFamily="@font/inria_sans_bold"
         android:text="Personalized
@@ -19,7 +19,7 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.593"
+        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
@@ -28,14 +28,14 @@
         android:id="@+id/backbtn"
         android:layout_width="25dp"
         android:layout_height="25dp"
-        android:background="@drawable/leftarrowwhite"
         android:layout_marginTop="40dp"
+        android:background="@drawable/leftarrowwhite"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
+        app:layout_constraintVertical_bias="0" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -62,39 +62,20 @@
         android:id="@+id/searchView"
         android:layout_width="363dp"
         android:layout_height="54dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
         android:background="@drawable/search_input"
         android:imeOptions="flagNoExtractUi|flagNoFullscreen"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:queryBackground="@drawable/bg_searchview_query"
         android:queryHint="Search"
         android:searchHintIcon="@drawable/baseline_search"
         android:searchIcon="@drawable/baseline_search"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView10"
-        app:layout_constraintVertical_bias="0.137"
-        android:queryBackground="@drawable/bg_searchview_query">
-
-        <TextView
-            android:id="@+id/sectiontxt1"
-            android:layout_width="330dp"
-            android:layout_height="94dp"
-            android:fontFamily="@font/inria_sans_bold"
-            android:text="Personalized Remedies"
-            android:textColor="@color/white"
-            android:textSize="34sp" />
-
-        <TextView
-            android:id="@+id/sectiontxt"
-            android:layout_width="278dp"
-            android:layout_height="95dp"
-            android:layout_marginTop="16dp"
-            android:fontFamily="@font/inria_sans_bold"
-            android:text="Personalized remedies"
-            android:textColor="@color/white"
-            android:textSize="34sp" />
-    </SearchView>
+        app:layout_constraintVertical_bias="0.137"/>
 
     <!--    <ImageView-->
     <!--        android:id="@+id/imageView11"-->
@@ -187,7 +168,6 @@
         android:layout_marginBottom="4dp"
         android:fontFamily="@font/inria_sans_regular"
         android:text="Home"
-        android:textColor="@color/primary_blue"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -203,6 +183,7 @@
         android:layout_marginStart="20dp"
         android:fontFamily="@font/inria_sans_regular"
         android:text="Remedies"
+        android:textColor="@color/primary_blue"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -319,22 +300,23 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.315" />
+        app:layout_constraintVertical_bias="0.348" />
 
     <ImageButton
         android:id="@+id/imageButton5"
         android:layout_width="57dp"
         android:layout_height="25dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/seeallbtn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.322" />
+        app:layout_constraintVertical_bias="0.32" />
 
     <ImageButton
         android:id="@+id/imageButton4"
@@ -344,10 +326,10 @@
         android:background="@drawable/seeallbtn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.315" />
+        app:layout_constraintVertical_bias="0.348" />
 
     <ImageButton
         android:id="@+id/imageButton8"

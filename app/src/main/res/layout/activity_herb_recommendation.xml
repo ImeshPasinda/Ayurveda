@@ -9,10 +9,9 @@
 
     <TextView
         android:id="@+id/docNamePtxt"
-        android:layout_width="287dp"
-        android:layout_height="92dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="45dp"
+        android:layout_width="278dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="30dp"
         android:fontFamily="@font/inria_sans_bold"
         android:text="Personalized
                       Recommendations"
@@ -20,7 +19,7 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
@@ -29,14 +28,14 @@
         android:id="@+id/backbtn"
         android:layout_width="25dp"
         android:layout_height="25dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/leftarrowwhite"
-        android:layout_marginTop="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
+        app:layout_constraintVertical_bias="0" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -46,18 +45,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/rectbg" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/store_recyclerview"
-        android:layout_width="386dp"
-        android:layout_height="306dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView13"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.36"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.856"
-        tools:listitem="@layout/list_item_herbs" />
 
     <!--    <ImageView-->
     <!--        android:id="@+id/imageView11"-->
@@ -96,6 +83,16 @@
     <!--        app:layout_constraintVertical_bias="0.033"-->
     <!--        app:srcCompat="@drawable/blue_round" />-->
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/store_recyclerview"
+        android:layout_width="414dp"
+        android:layout_height="390dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/featured"
+        tools:listitem="@layout/list_item_store_products" />
+
     <SearchView
         android:id="@+id/herbSearch"
         android:layout_width="363dp"
@@ -110,28 +107,11 @@
         android:searchIcon="@drawable/baseline_search"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.258">
+        app:layout_constraintTop_toTopOf="@+id/imageView10"
+        app:layout_constraintVertical_bias="0.137" >
 
-        <TextView
-            android:id="@+id/sectiontxt1"
-            android:layout_width="330dp"
-            android:layout_height="94dp"
-            android:fontFamily="@font/inria_sans_bold"
-            android:text="Personalized Remedies"
-            android:textColor="@color/white"
-            android:textSize="34sp" />
-
-        <TextView
-            android:id="@+id/sectiontxt"
-            android:layout_width="278dp"
-            android:layout_height="95dp"
-            android:layout_marginTop="16dp"
-            android:fontFamily="@font/inria_sans_bold"
-            android:text="Personalized remedies"
-            android:textColor="@color/white"
-            android:textSize="34sp" />
     </SearchView>
 
     <Button
@@ -187,7 +167,6 @@
         android:layout_marginBottom="4dp"
         android:fontFamily="@font/inria_sans_regular"
         android:text="Home"
-        android:textColor="@color/primary_blue"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -203,6 +182,7 @@
         android:layout_marginStart="20dp"
         android:fontFamily="@font/inria_sans_regular"
         android:text="Remedies"
+        android:textColor="@color/primary_blue"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -269,10 +249,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.272" />
+        app:layout_constraintVertical_bias="0.26" />
 
     <Button
         android:id="@+id/remediesbtn"
@@ -314,27 +294,28 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="160dp"
         android:fontFamily="@font/inria_sans_bold"
-        android:text="Featured Remedies"
+        android:text="Featured Herbs"
         android:textColor="@color/primary_gray"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.315" />
+        app:layout_constraintVertical_bias="0.348" />
 
     <ImageButton
         android:id="@+id/imageButton5"
         android:layout_width="57dp"
         android:layout_height="25dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/seeallbtn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.322" />
+        app:layout_constraintVertical_bias="0.32" />
 
     <ImageButton
         android:id="@+id/imageButton4"
@@ -344,10 +325,10 @@
         android:background="@drawable/seeallbtn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.315" />
+        app:layout_constraintVertical_bias="0.348" />
 
     <ImageButton
         android:id="@+id/imageButton8"

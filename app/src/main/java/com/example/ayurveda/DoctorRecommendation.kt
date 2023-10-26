@@ -2,10 +2,12 @@ package com.example.ayurveda
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.SearchView
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -29,12 +31,45 @@ class DoctorRecommendation : AppCompatActivity() {
             startActivity(intent)
         }
 
-        //profile
-        val userNavBtn = findViewById<ImageButton>(R.id.userProfileNavbtn)
-        userNavBtn.setOnClickListener {
+        //Profile
+        db = FirebaseFirestore.getInstance()
+        val sessionManager = SessionManager(this)
+        val userEmail = sessionManager.getUserEmail()
+
+
+
+        val userNavButton = findViewById<ImageButton>(R.id.userProfileNavbtn)
+        userNavButton.setOnClickListener {
             val intent = Intent(this, UserProfile::class.java)
             startActivity(intent)
         }
+        // Retrieve the username from the "users" collection
+        val usersCollection = db.collection("users")
+        usersCollection.whereEqualTo("email", userEmail)
+            .get()
+            .addOnSuccessListener { userQuerySnapshot ->
+                if (!userQuerySnapshot.isEmpty) {
+                    // There may be multiple documents matching the email; loop through them if needed
+                    for (userDocument in userQuerySnapshot.documents) {
+                        val username = userDocument.getString("username")
+
+                        // Now you have the username, and you can use it as needed
+                        // For example, you can set it in a TextView
+                        val usernameTextView = findViewById<TextView>(R.id.unamenavbar)
+                        usernameTextView.text = username?.split(" ")?.get(0) ?: "User"
+
+                        // If you found the username you were looking for, you can break out of the loop
+                        break
+                    }
+                } else {
+                    // Handle the case when no document with the matching email is found
+                    Log.d("Firestore", "No user document found for email: $userEmail")
+                }
+            }
+            .addOnFailureListener { exception ->
+                // Handle the failure to retrieve user data
+                Log.e("Firestore", "Error getting user document: $exception")
+            }
 
         //remedy
         val remediesBtn = findViewById<Button>(R.id.remediesbtn)
@@ -71,6 +106,8 @@ class DoctorRecommendation : AppCompatActivity() {
             startActivity(intent)
         }
 
+
+
         recyclerView = findViewById(R.id.recycleviewdoctors)
         searchView = findViewById(R.id.searchViewDoctor)
 
@@ -81,7 +118,7 @@ class DoctorRecommendation : AppCompatActivity() {
         doctorAdapter = DoctorAdapter(doctorArrayList)
         recyclerView.adapter = doctorAdapter
 
-        db = FirebaseFirestore.getInstance()
+
 
         db.collection("doctors").get()
             .addOnSuccessListener { result ->
