@@ -13,10 +13,14 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class ProductAdapter(private var productList: List<Product>) : RecyclerView.Adapter<ProductAdapter.ProductViewHolder>() {
 
-    fun updateData(newProducts: List<Product>) {
+    private var categoryFilter: String? = null
+
+    fun updateData(newProducts: List<Product>, category: String? = null) {
         productList = newProducts
+        categoryFilter = category
         notifyDataSetChanged()
     }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.list_item_store_products, parent, false)
         return ProductViewHolder(view)
@@ -33,21 +37,16 @@ class ProductAdapter(private var productList: List<Product>) : RecyclerView.Adap
             .load(product.productImg)
             .into(holder.productImageView)
 
-
-        // Set a click listener for the "Add to Cart" button
         holder.addCartBtn.setOnClickListener {
-            // Create an intent to start the ProductActivity
             val context = holder.itemView.context
             val intent = Intent(context, ProductsView::class.java)
 
-            // Pass data as extras to the intent
             intent.putExtra("productNameEn", product.productNameEn)
             intent.putExtra("productNameSn", product.productNameSn)
             intent.putExtra("price", product.price)
             intent.putExtra("productImg", product.productImg)
             intent.putExtra("productDescription", product.description)
 
-            // Start the ProductActivity
             context.startActivity(intent)
         }
     }
@@ -62,6 +61,5 @@ class ProductAdapter(private var productList: List<Product>) : RecyclerView.Adap
         val productNameSnTextView: TextView = itemView.findViewById(R.id.prodNameSn)
         val priceTextView: TextView = itemView.findViewById(R.id.prodPrice)
         val addCartBtn: FloatingActionButton = itemView.findViewById(R.id.addcartbtn)
-
     }
 }

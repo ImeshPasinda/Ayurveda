@@ -47,7 +47,7 @@
         app:srcCompat="@drawable/rectbg" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycleviewherbs"
+        android:id="@+id/recycleviewremedies"
         android:layout_width="386dp"
         android:layout_height="306dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView13"

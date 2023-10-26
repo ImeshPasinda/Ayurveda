@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/remedyNameSn"
+        android:id="@+id/remedyTitle"
         android:layout_width="263dp"
         android:layout_height="26dp"
         android:layout_marginStart="16dp"
@@ -38,7 +38,7 @@
         app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
-        android:id="@+id/RemedyNameEn"
+        android:id="@+id/remedyDocName"
         tools:ignore="TextContrastCheck"
         android:layout_width="263dp"
         android:layout_height="26dp"

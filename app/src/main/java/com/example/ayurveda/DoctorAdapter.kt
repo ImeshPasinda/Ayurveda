@@ -18,6 +18,12 @@ class DoctorAdapter(private var doctorsList: List<Doctor>) :
         notifyDataSetChanged()
     }
 
+    fun updateData(newDoctors: List<Doctor>) {
+        doctorsList = newDoctors
+        notifyDataSetChanged()
+    }
+
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.list_item_doctors, parent, false)

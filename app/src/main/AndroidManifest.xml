@@ -106,15 +106,18 @@
         <activity
             android:name=".AddProduct"
             android:exported="false" />
-        <activity
-            android:name=".DoctorRecommendation"
-            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".DoctorRecommendation"-->
+<!--            android:exported="false"-->
+<!--            android:windowSoftInputMode="adjustPan"/>-->
         <activity
             android:name=".HerbRecommendation"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"/>
         <activity
             android:name=".RemedyRecommendation"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"/>
         <activity
             android:name=".Remedies"
             android:exported="false" />
@@ -140,7 +143,7 @@
             android:name=".ViewAppoinmentsDetails"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".DoctorRecommendation"
             android:exported="true"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
