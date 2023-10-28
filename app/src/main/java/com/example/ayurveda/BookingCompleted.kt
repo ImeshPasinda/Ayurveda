@@ -1,8 +1,10 @@
 package com.example.ayurveda
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.ImageButton
 import android.widget.TextView
 import com.google.firebase.firestore.FirebaseFirestore
 
@@ -15,6 +17,13 @@ class BookingCompleted : AppCompatActivity() {
 
         val sessionManager = SessionManager(this)
         val userEmail = sessionManager.getUserEmail()
+
+
+        val userNavButton = findViewById<ImageButton>(R.id.userProfileNavbtn)
+        userNavButton.setOnClickListener {
+            val intent = Intent(this, DoctorProfileOwn::class.java)
+            startActivity(intent)
+        }
 
         // Retrieve the username from the "users" collection
         val usersCollection = db.collection("doctors")
