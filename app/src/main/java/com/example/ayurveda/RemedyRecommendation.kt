@@ -4,7 +4,6 @@ package com.example.ayurveda
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.SearchView
@@ -13,7 +12,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.ayurveda.Remedy
 import com.google.firebase.firestore.FirebaseFirestore
 
 class RemedyRecommendation : AppCompatActivity() {
@@ -78,14 +76,14 @@ class RemedyRecommendation : AppCompatActivity() {
         }
 
         // Appointments
-        val appBtn = findViewById<ImageButton>(R.id.imageButton8)
+        val appBtn = findViewById<ImageButton>(R.id.userAppointmentsbtn)
         appBtn.setOnClickListener {
             val intent = Intent(this, UserAppointments::class.java)
             startActivity(intent)
         }
 
         // Store
-        val storeBtn = findViewById<ImageButton>(R.id.imageButton9)
+        val storeBtn = findViewById<ImageButton>(R.id.storenavbtn)
         storeBtn.setOnClickListener {
             val intent = Intent(this, StoreHome::class.java)
             startActivity(intent)

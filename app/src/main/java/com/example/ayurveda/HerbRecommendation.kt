@@ -54,14 +54,14 @@ class HerbRecommendation : AppCompatActivity() {
         }
 
         //appoinments
-        val appBtn = findViewById<ImageButton>(R.id.imageButton8)
+        val appBtn = findViewById<ImageButton>(R.id.userAppointmentsbtn)
         appBtn.setOnClickListener {
             val intent = Intent(this, UserAppointments::class.java)
             startActivity(intent)
         }
 
         //store
-        val storeBtn = findViewById<ImageButton>(R.id.imageButton9)
+        val storeBtn = findViewById<ImageButton>(R.id.storenavbtn)
         storeBtn.setOnClickListener {
             val intent = Intent(this, StoreHome::class.java)
             startActivity(intent)

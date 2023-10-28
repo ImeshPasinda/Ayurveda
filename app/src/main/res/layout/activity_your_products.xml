@@ -82,7 +82,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.273"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton9"
+        app:layout_constraintTop_toBottomOf="@+id/storenavbtn"
         app:layout_constraintVertical_bias="0.272" />
 
     <TextView
@@ -114,7 +114,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.72"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton11"
+        app:layout_constraintTop_toBottomOf="@+id/remedyNavBtn"
         app:layout_constraintVertical_bias="0.421" />
 
     <TextView
@@ -135,7 +135,7 @@
         app:layout_constraintVertical_bias="0.266" />
 
     <ImageButton
-        android:id="@+id/imageButton8"
+        android:id="@+id/userAppointmentsbtn"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="24dp"
@@ -145,13 +145,13 @@
         app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
     <ImageButton
-        android:id="@+id/imageButton9"
+        android:id="@+id/storenavbtn"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="112dp"
         android:background="@drawable/storeactive"
-        app:layout_constraintStart_toEndOf="@+id/imageButton8"
+        app:layout_constraintStart_toEndOf="@+id/userAppointmentsbtn"
         app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
     <ImageButton
@@ -162,13 +162,13 @@
         android:layout_marginTop="108dp"
         android:layout_marginEnd="48dp"
         android:background="@drawable/home_icon"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton11"
+        app:layout_constraintEnd_toStartOf="@+id/remedyNavBtn"
         app:layout_constraintHorizontal_bias="0.517"
-        app:layout_constraintStart_toEndOf="@+id/imageButton9"
+        app:layout_constraintStart_toEndOf="@+id/storenavbtn"
         app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
     <ImageButton
-        android:id="@+id/imageButton11"
+        android:id="@+id/remedyNavBtn"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="112dp"
@@ -200,7 +200,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.037"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton8"
+        app:layout_constraintTop_toBottomOf="@+id/userAppointmentsbtn"
         app:layout_constraintVertical_bias="0.272" />
 
     <ImageButton

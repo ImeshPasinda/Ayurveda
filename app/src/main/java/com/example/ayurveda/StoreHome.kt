@@ -1,5 +1,6 @@
 package com.example.ayurveda
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -18,6 +19,7 @@ class StoreHome : AppCompatActivity() {
     private lateinit var productAdapter: ProductAdapter
     private val allProducts: MutableList<Product> = mutableListOf()
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_store_home)
@@ -47,17 +49,42 @@ class StoreHome : AppCompatActivity() {
 
 
 
-        // Navbar
+        //Navbar
+
         val sessionManager = SessionManager(this)
         val userEmail = sessionManager.getUserEmail()
 
-
-
+        //Profile
         val userNavButton = findViewById<ImageButton>(R.id.userProfileNavbtn)
         userNavButton.setOnClickListener {
             val intent = Intent(this, UserProfile::class.java)
             startActivity(intent)
         }
+        //Home
+        val homeBtn = findViewById<ImageButton>(R.id.homenavbtn_1)
+        homeBtn.setOnClickListener {
+            val intent = Intent(this, Home::class.java)
+            startActivity(intent)
+        }
+        //Appointments
+        val userAppointmentButton = findViewById<ImageButton>(R.id.userAppointmentsbtn)
+        userAppointmentButton.setOnClickListener {
+            val intent = Intent(this, UserAppointments::class.java)
+            startActivity(intent)
+        }
+        //Store
+        val userStoreButton = findViewById<ImageButton>(R.id.storenavbtn)
+        userStoreButton.setOnClickListener {
+            val intent = Intent(this, StoreHome::class.java)
+            startActivity(intent)
+        }
+        //Remedy
+        val RemedyButton = findViewById<ImageButton>(R.id.remedyNavBtn)
+        RemedyButton.setOnClickListener {
+            val intent = Intent(this, DoctorRecommendation::class.java)
+            startActivity(intent)
+        }
+
         // Retrieve the username from the "users" collection
         val usersCollection = db.collection("users")
         usersCollection.whereEqualTo("email", userEmail)

@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
@@ -22,13 +21,13 @@ class DoctorProfileOwn : AppCompatActivity() {
         val sessionManager = SessionManager(this)
         val userEmail = sessionManager.getUserEmail()
 
-        val doctorAppoinButton = findViewById<ImageButton>(R.id.imageButton8)
+        val doctorAppoinButton = findViewById<ImageButton>(R.id.userAppointmentsbtn)
         doctorAppoinButton.setOnClickListener {
             val intent = Intent(this, ViewAppoinments::class.java)
             startActivity(intent)
         }
 
-        val doctorRemButton = findViewById<ImageButton>(R.id.imageButton11)
+        val doctorRemButton = findViewById<ImageButton>(R.id.remedyNavBtn)
         doctorRemButton.setOnClickListener {
             val intent = Intent(this,AddDoctorRemedy::class.java)
             startActivity(intent)
