@@ -68,3 +68,6 @@ The goal of user research is to identify and verify the requirements of users wi
 - **Gather feedback on product visibility enhancement.**
 - **Test overall effectiveness in boosting online sales.**
 
+## 📱 Additional Insight
+
+Mentioning the support for high 6.5-inch phones is a good point as it indicates the app's adaptability to different screen sizes, ensuring a seamless experience for a wide range of users.
